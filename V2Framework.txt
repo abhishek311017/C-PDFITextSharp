@@ -1,0 +1,14 @@
+Ingesting Configuaration metadata into MsSQl,Hadoop,Oracle and Mysql
+-details of table like
+-Type of load -incremental/Full Load
+-load path,
+-Athena table name,
+-Cron Json (Quartz)
+
+V2 Framework - Scala Code:actual coding to ingest data from Various sources to Staged bucket and 
+               Python Code:Reading Metadata from databases and Triggers the Scala code based on cron json
+			   Glue jobs:Staged to Curated and creates Athena Table
+			   Lambda : triggers Glue Jobs
+				   
+	Sources         OnPrem(Scala/Python)                   Cloud(Glue jobs/Lambda)          Sink			   
+EDW,ODS,HADOOP etc ---------------------->Stage Bucket ---------------------------------->Curated (AWS S3)
