@@ -29,9 +29,10 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: AzureRmWebAppDeployment@4
+  displayName: 'Deploy to Web APP'
   inputs:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Visual Studio Professional Subscription(911c51d8-d3b2-41ac-bdd6-5bd360b33460)'
     appType: 'webApp'
     WebAppName: 'azwebapppdf'
-    packageForLinux: '$(System.artifactStagingDirectory)/**/*.zip'
+    packageForLinux: '$(build.artifactStagingDirectory)/**/*.zip'
