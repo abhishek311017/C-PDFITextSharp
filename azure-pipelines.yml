@@ -27,3 +27,11 @@ steps:
     msbuildArgs: '/p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)"'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Visual Studio Professional Subscription(911c51d8-d3b2-41ac-bdd6-5bd360b33460)'
+    appType: 'webApp'
+    WebAppName: 'azwebapppdf'
+    packageForLinux: '$(System.artifactStagingDirectory)/**/*.zip'
