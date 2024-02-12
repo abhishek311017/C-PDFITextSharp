@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Drawing;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using Font = iTextSharp.text.Font;
+using ListItem = iTextSharp.text.ListItem;
+using Rectangle = iTextSharp.text.Rectangle;
 
 namespace PDFDownloadPractice.Controllers
 {
@@ -32,16 +36,39 @@ namespace PDFDownloadPractice.Controllers
             content.SetColorStroke(BaseColor.BLACK);
             content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
             content.Stroke();
-            
-            //Font fontH1 = new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.BOLD, BaseColor.BLACK);
-            //Font fontH2 = new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.NORMAL, BaseColor.BLACK);
-            //Font fontH3 = new Font(Font.FontFamily.TIMES_ROMAN, 9f, Font.BOLDITALIC, BaseColor.RED);
-            //Font fontH4 = new Font(Font.FontFamily.TIMES_ROMAN, 10f, Font.BOLDITALIC, BaseColor.BLACK);
-            //Font fontH5 = new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.NORMAL, BaseColor.BLACK);
-            Font fontH6 = new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.BOLD, BaseColor.BLACK);
+
+            Font fontH1 = new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.BOLD, BaseColor.BLACK);
+            Font fontH2 = new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.NORMAL, BaseColor.BLACK);
+            Font fontH3 = new Font(Font.FontFamily.TIMES_ROMAN, 9f, Font.BOLDITALIC, BaseColor.RED);
+            Font fontH4 = new Font(Font.FontFamily.TIMES_ROMAN, 10f, Font.BOLDITALIC, BaseColor.BLACK);
+            Font fontH5 = new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL, BaseColor.BLACK);
+            Font fontH6 = new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.BOLD, BaseColor.BLACK);
             Font font = new Font(FontFactory.GetFont("Arial", 7f, Font.NORMAL));
             fontH6.SetStyle(Font.UNDERLINE);
+           // fontH6.SetStyle(Font.BOLD);
 
+            PdfPTable T14 = new PdfPTable(5);
+            PdfPTable T15 = new PdfPTable(5);
+            PdfPTable T16 = new PdfPTable(2);
+            PdfPTable T17 = new PdfPTable(2);
+            PdfPTable T18 = new PdfPTable(1);
+            PdfPTable T19 = new PdfPTable(1);
+            PdfPTable T20 = new PdfPTable(1);
+            PdfPTable T21 = new PdfPTable(1);
+            PdfPTable T22 = new PdfPTable(1);
+            PdfPTable T23 = new PdfPTable(1);
+            PdfPTable T24 = new PdfPTable(1);
+            T14.WidthPercentage = 96.5f;
+            T15.WidthPercentage = 96.5f;
+            T16.WidthPercentage = 96.5f;
+            T17.WidthPercentage = 96.5f;
+            T18.WidthPercentage = 88;
+            T19.WidthPercentage = 96.5f;
+            T20.WidthPercentage = 96.5f;
+            T21.WidthPercentage = 96.5f;
+            T22.WidthPercentage = 96.5f;
+            T23.WidthPercentage = 96.5f;
+            T24.WidthPercentage = 96.5f;
 
             PdfPTable pdfPTableEmpty = new PdfPTable(1);
             PdfPCell cell2 = new PdfPCell(new Phrase(" "));
@@ -364,7 +391,324 @@ namespace PDFDownloadPractice.Controllers
             PdfPCell nesthousing4 = new PdfPCell(nestedRevenueTable);
             nesthousing4.BorderWidth = 1;
             T10.AddCell(nesthousing4);
-            T10.SpacingAfter = 2;
+            T10.SpacingAfter = 5;
+
+            //fouth row
+            PdfPCell cell38 = (new PdfPCell(new Phrase("Total of Section A Must Match Total of Section B ", new Font(Font.FontFamily.TIMES_ROMAN, 10f, Font.BOLD))));
+            PdfPTable T11 = new PdfPTable(5);
+            T11.WidthPercentage = 96.5f;
+            cell38.PaddingBottom = 5f;
+            cell38.Colspan = 4;
+            cell38.BackgroundColor = BaseColor.LIGHT_GRAY;
+            cell38.HorizontalAlignment = 1;
+            cell38.VerticalAlignment = Element.ALIGN_MIDDLE;
+            cell38.BorderWidth = 1f;
+            T11.AddCell(cell38);
+            PdfPCell cell39 = (new PdfPCell(new Phrase("9", font)));
+            cell39.Colspan = 1;
+            cell39.HorizontalAlignment = Element.ALIGN_CENTER;
+            cell39.VerticalAlignment = Element.ALIGN_TOP;
+            T11.AddCell(cell39);
+
+          
+            //Create Phrase Object (Data, Font object)
+            Phrase ph4 = new Phrase("Section B: Tax Information", new Font(Font.FontFamily.TIMES_ROMAN, 14f, Font.BOLD, BaseColor.BLACK));
+            PdfPTable T12 = new PdfPTable(1);
+            //Create Cell using Phrase object
+            PdfPCell cell40 = new PdfPCell(ph4);
+            T12.WidthPercentage = 96.5f;
+            cell40.Colspan = 2;
+            cell40.FixedHeight = 18.0f;
+            cell40.HorizontalAlignment = 1;
+            cell40.VerticalAlignment = 1;
+            cell40.BackgroundColor = BaseColor.GRAY;
+            T12.AddCell(cell40);
+
+            PdfPTable T13 = new PdfPTable(5);
+            T13.WidthPercentage = 96.5f;
+            //T13.AddCell(new PdfPCell(new Phrase("Location", fontH1)));
+            //T13.AddCell(new PdfPCell(new Phrase("Sticks Per Pack", fontH1)));
+            //T13.AddCell(new PdfPCell(new Phrase("# of Pack(s) State Tax Paid", fontH1)));
+            //T13.AddCell(new PdfPCell(new Phrase("# of Pack(s) Local Tax Paid", fontH1)));
+            //T13.AddCell(new PdfPCell(new Phrase("# of Pack(s) No State Tax Paid", fontH1)));
+            //T13.AddCell(new PdfPCell(new Phrase("ALASKA", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("20", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("7", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("ALASKA", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("20", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("2", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("", fontH2)));
+            //T13.AddCell(new PdfPCell(new Phrase("", fontH2)));
+
+            PdfPCell cell75 = (new PdfPCell(new Phrase("Location", fontH1)));
+            cell75.HorizontalAlignment = 1;
+            cell75.VerticalAlignment = 1;
+            cell75.FixedHeight = 18.0f;
+            cell75.BackgroundColor = BaseColor.LIGHT_GRAY;
+            PdfPCell cell61 = (new PdfPCell(new Phrase("Sticks Per Pack", fontH1)));
+            cell61.HorizontalAlignment = 1;
+            cell61.VerticalAlignment = 1;
+            cell61.FixedHeight = 18.0f;
+            cell61.BackgroundColor = BaseColor.LIGHT_GRAY;
+            PdfPCell cell62 = (new PdfPCell(new Phrase("# of Pack(s) State Tax Paid", fontH1)));
+            cell62.HorizontalAlignment = 1;
+            cell62.VerticalAlignment = 1;
+            cell62.FixedHeight = 18.0f;
+            cell62.BackgroundColor = BaseColor.LIGHT_GRAY;
+            PdfPCell cell63 = (new PdfPCell(new Phrase("# of Pack(s) Local Tax Paid", fontH1)));
+            cell63.HorizontalAlignment = 1;
+            cell63.VerticalAlignment = 1;
+            cell63.FixedHeight = 18.0f;
+            cell63.BackgroundColor = BaseColor.LIGHT_GRAY;
+            PdfPCell cell64 = (new PdfPCell(new Phrase("# of Pack(s) No State Tax Paid", fontH1)));
+            cell64.HorizontalAlignment = 1;
+            cell64.VerticalAlignment = 1;
+            cell64.FixedHeight = 18.0f;
+            cell64.BackgroundColor = BaseColor.LIGHT_GRAY;
+            PdfPCell cell65 = (new PdfPCell(new Phrase("ALASKA", fontH2)));
+            cell65.HorizontalAlignment = 1;
+            cell65.VerticalAlignment = 1;
+            cell65.FixedHeight = 18.0f;
+            PdfPCell cell66 = (new PdfPCell(new Phrase("20", fontH2)));
+            cell66.HorizontalAlignment = 1;
+            cell66.VerticalAlignment = 1;
+            cell66.FixedHeight = 18.0f;
+            PdfPCell cell67 = (new PdfPCell(new Phrase("7", fontH2)));
+            cell67.HorizontalAlignment = 1;
+            cell67.VerticalAlignment = 1;
+            cell67.FixedHeight = 18.0f;
+            PdfPCell cell68 = (new PdfPCell(new Phrase("", fontH2)));
+            cell68.FixedHeight = 18.0f;
+            PdfPCell cell69 = (new PdfPCell(new Phrase("", fontH2)));
+            cell69.FixedHeight = 18.0f;
+            PdfPCell cell70 = (new PdfPCell(new Phrase("ALASKA", fontH2)));
+            cell70.FixedHeight = 18.0f;
+            cell70.HorizontalAlignment = 1;
+            cell70.VerticalAlignment = 1;
+            PdfPCell cell71 = (new PdfPCell(new Phrase("20", fontH2)));
+            cell71.HorizontalAlignment = 1;
+            cell71.FixedHeight = 18.0f;
+            cell71.VerticalAlignment = 1;
+            PdfPCell cell72 = (new PdfPCell(new Phrase("2", fontH2)));
+            cell72.HorizontalAlignment = 1;
+            cell72.FixedHeight = 18.0f;
+            cell72.VerticalAlignment = 1;
+            PdfPCell cell73 = (new PdfPCell(new Phrase("", fontH2)));
+            cell73.FixedHeight = 18.0f;
+            PdfPCell cell74 = (new PdfPCell(new Phrase("", fontH2)));
+            cell74.FixedHeight = 18.0f;
+            T14.AddCell(cell75);
+            T14.AddCell(cell61);
+            T14.AddCell(cell62);
+            T14.AddCell(cell63);
+            T14.AddCell(cell64);
+            T14.AddCell(cell65);
+            T14.AddCell(cell66);
+            T14.AddCell(cell67);
+            T14.AddCell(cell68);
+            T14.AddCell(cell69);
+            T14.AddCell(cell70);
+            T14.AddCell(cell71);
+            T14.AddCell(cell72);
+            T14.AddCell(cell73);
+            T14.AddCell(cell74);
+
+            PdfPCell cell42 = (new PdfPCell(new Phrase("State Total", new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.BOLD))));
+            cell42.BackgroundColor = BaseColor.LIGHT_GRAY;
+            cell42.HorizontalAlignment = 1;
+            cell75.FixedHeight = 18.0f;
+            cell42.VerticalAlignment = 1;
+            T14.AddCell(cell42);
+            PdfPCell cell43 = (new PdfPCell(new Phrase("", new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.NORMAL))));
+            cell43.BackgroundColor = BaseColor.GRAY;
+            cell43.FixedHeight = 18.0f;
+            T14.AddCell(cell43);
+            PdfPCell cell76 = (new PdfPCell(new Phrase("9", fontH1)));
+            cell76.HorizontalAlignment = 1;
+            cell76.FixedHeight = 18.0f;
+            cell76.VerticalAlignment = 1;
+            T14.AddCell(cell76);
+            PdfPCell cell44 = (new PdfPCell(new Phrase("", new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.NORMAL))));
+            cell44.BackgroundColor = BaseColor.GRAY;
+            cell44.FixedHeight = 18.0f;
+            T14.AddCell(cell44);
+            T14.AddCell(new PdfPCell(new Phrase("", fontH1)));
+
+            //fouth row
+            PdfPCell cell46 = (new PdfPCell(new Phrase("Total of Section B (State Tax Paid + Non State Tax Paid) Must Match Total Section A ", new Font(Font.FontFamily.TIMES_ROMAN, 10f, Font.BOLD))));
+            cell46.Colspan = 4;
+            cell46.BackgroundColor = BaseColor.LIGHT_GRAY;
+            cell46.HorizontalAlignment = 1;
+            cell46.VerticalAlignment = 1;
+            T15.AddCell(cell46);
+            PdfPCell cell47 = (new PdfPCell(new Phrase("9", new Font(Font.FontFamily.TIMES_ROMAN, 8f, Font.BOLD))));
+            cell47.Colspan = 1;
+            cell47.HorizontalAlignment = 1;
+            cell47.VerticalAlignment = 1;
+            T15.AddCell(cell47);
+            T15.SpacingAfter = 25;
+
+            Phrase ph5 = new Phrase("DIRECT DISTRIBUTOR ACKNOWLEDGEMENT FIELDS MUST BE COMPLETED FOR CREDIT TO BE GENERATED", fontH3);
+
+            //Create Cell using Phrase object
+            PdfPCell cell48 = new PdfPCell(ph5);
+            cell48.Colspan = 2;
+            cell48.BorderWidth = 2;
+            cell48.HorizontalAlignment = 1;
+            cell48.VerticalAlignment = 1;
+            cell48.FixedHeight = 17.0f;
+            cell48.BorderWidth = 1.5f;
+            cell48.BackgroundColor = BaseColor.LIGHT_GRAY;
+            T16.AddCell(cell48);
+            T16.SpacingAfter = 1;
+
+            Phrase ph6 = new Phrase("Direct Distributor Acknowledgement", fontH4);
+
+            //Create Cell using Phrase object
+            PdfPCell cell49 = new PdfPCell(ph6);
+            cell49.Colspan = 2;
+            cell49.Border = Rectangle.NO_BORDER;
+            cell49.HorizontalAlignment = 1;
+            cell49.VerticalAlignment = 1;
+            cell49.FixedHeight = 17.0f;
+            cell49.BackgroundColor = BaseColor.LIGHT_GRAY;
+            T17.AddCell(cell49);
+            T17.SpacingAfter = 10;
+
+            Phrase p1 = new Phrase("By acknowledging below, the Direct Distributor agrees that the information provided in Sections A & B is accurate to the best of their knowledge. In addition,the Direct Distributor agrees to allow Philip Morris USA to process the product returned in accordance with the Philip Morris USA Returned Goods Policy. ", fontH5);
+            PdfPCell cell50 = new PdfPCell(p1);
+            cell50.Border = Rectangle.NO_BORDER;
+            cell50.HorizontalAlignment = 1;
+            cell50.VerticalAlignment = 1;
+            T18.AddCell(cell50);
+            T18.SpacingAfter = 10;
+
+
+            Phrase ph7 = new Phrase(" ", new Font(Font.FontFamily.TIMES_ROMAN, 1f, Font.BOLD, BaseColor.BLACK));
+
+            //Create Cell using Phrase object
+            PdfPCell cell51 = new PdfPCell(ph7);
+            cell51.BackgroundColor = BaseColor.LIGHT_GRAY;
+            cell51.BorderWidth = 1;
+            T19.AddCell(cell51);
+            T19.SpacingAfter = 10;
+
+            //nested tables
+            PdfPTable nested5 = new PdfPTable(6);
+
+
+            Paragraph ph9 = (new Paragraph("I have reviewed the information contained in this PM USA Returned Goods Authorization" +
+                " Form(and all attachments) and I certify that it is accurate by selecting the box.I agree to theterms of the PM USA Returned" +
+                " Goods Policy and I am authorized to do so on behalf of theDirect Distributor listed on this document.", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL)));
+            PdfPCell cell54 = (new PdfPCell(ph9));
+            cell54.HorizontalAlignment = Element.ALIGN_LEFT;
+            cell54.VerticalAlignment = Element.ALIGN_LEFT;
+            cell54.Colspan = 4;
+            cell54.Rowspan = 4;
+            cell54.Border = Rectangle.NO_BORDER;
+            nested5.AddCell(cell54);
+
+
+            PdfPCell cell55 = (new PdfPCell(new Phrase("Direct Distributor Representative (Type in your name)", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
+            cell55.Border = Rectangle.NO_BORDER;
+            nested5.AddCell(cell55);
+
+            PdfPCell cell56 = (new PdfPCell(new Phrase("test test", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
+            nested5.AddCell(cell56);
+
+            PdfPCell cell57 = (new PdfPCell(new Phrase("Date:", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
+            cell57.Border = Rectangle.NO_BORDER;
+            nested5.AddCell(cell57);
+
+            PdfPCell cell58 = (new PdfPCell(new Phrase("10/17/2022", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
+            nested5.AddCell(cell58);
+
+
+            PdfPCell nesthousing5 = new PdfPCell(nested5);
+            nesthousing5.BorderWidth = 1;
+            nesthousing5.PaddingBottom = 8;
+            nesthousing5.Border = Rectangle.NO_BORDER;
+            T20.AddCell(nesthousing5);
+            T20.SpacingAfter = 2;
+
+            Phrase ph8 = new Phrase(" ", new Font(Font.FontFamily.TIMES_ROMAN, 1f, Font.BOLD, BaseColor.BLACK));
+
+            //Create Cell using Phrase object
+            PdfPCell cell53 = new PdfPCell(ph8);
+            cell53.BackgroundColor = BaseColor.LIGHT_GRAY;
+            cell53.BorderWidth = 1;
+            T21.AddCell(cell53);
+            T21.SpacingAfter = 1000;
+
+            Phrase ph12 = new Phrase("PACKAGING INSTRUCTIONS:", fontH6);
+            PdfPCell cell77 = new PdfPCell(ph12);
+            cell77.Border = Rectangle.NO_BORDER;
+            cell77.PaddingTop = 30;
+            T23.AddCell(cell77);
+
+            List list1 = new List(List.UNORDERED);
+            list1.SetListSymbol("\u2022");
+            list1.IndentationLeft = 30f;
+            list1.Add(new ListItem(" Do not bind the product together. Place individual packs in cartons or neatly stack in boxes. Each carton should only contain product of the same quantity, price,category and tax jurisdiction.Do not mix the product in carton.Excise Tax Recovery Returns need only be separated by quantity, product deal and tax jurisdiction. ", fontH5));
+            list1.Add(new ListItem("Any product that appears to have been exposed to strong odors, foreign matter, infestation or excessive moisture should be isolated wrapped in plastic, and packagedseparately.", fontH5));
+            list1.Add(new ListItem("Shipping boxes should be in good condition. If re-using boxes, remove all old or existing labels or markings.", fontH5));
+            list1.Add(new ListItem("All boxes need to be labeled with the corresponding RGA number and sequentially number (1 of X, 2 of X)", fontH5));
+            list1.Add(new ListItem("Place the approved Returned Goods Authorization Form and any supporting documentation (ex. Authorized Concealed Damage Form) inside product shipment box 1 ofX and keep a copy for your files. ", fontH5));
+            list1.Add(new ListItem("Validate counts. In the event of a discrepancy, the Philip Morris USA Returned Goods Department's count will be final.", fontH5));
+            list1.Add(new ListItem("The completed form must be included with the shipment.", fontH5));
+
+            Phrase ph13 = new Phrase("SHIPPING INSTRUCTIONS:", fontH6);
+            PdfPCell cell80 = new PdfPCell(ph13);
+            cell80.Border = Rectangle.NO_BORDER;
+            cell80.PaddingTop = 15;
+            T24.AddCell(cell80);
+
+          //  T24.AddCell(new PdfPCell(new Phrase("", fontH2)));
+
+            List list2 = new List(List.UNORDERED);
+            list2.SetListSymbol("\u2022");
+            list2.IndentationLeft = 30f;
+            list2.Add(new ListItem("Product must be returned via a Philip Morris USA approved carrier and must be classified as freight collect on the bill of lading ", fontH5));
+            list2.Add(new ListItem("Multiple product returns may be shipped together as long as the paperwork and packaging for each product return is executed as instructed above", fontH5));
+
+            Phrase ph10 = new Phrase("REFERENCE THE PHILIP MORRIS USA RETURNED GOODS POLICY AND INSTRUCTIONS FOR ADDITIONAL INFORMATION", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.BOLD, BaseColor.BLACK));
+
+            //Create Cell using Phrase object
+            PdfPCell cell60 = new PdfPCell(ph10);
+            cell60.Colspan = 2;
+            cell60.HorizontalAlignment = 1;
+            cell60.VerticalAlignment = 1;
+            cell60.Border = Rectangle.NO_BORDER;
+            cell60.PaddingTop = 20;
+
+            T22.AddCell(cell60);
+
+
+            PdfPTable tbfooter = new PdfPTable(3);
+            tbfooter.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
+            tbfooter.DefaultCell.Border = 0;
+            tbfooter.AddCell(new Paragraph());
+            tbfooter.AddCell(new Paragraph());
+            var _cell2 = new PdfPCell(new Paragraph(new Chunk("Capitalized word and phases are defined in the Philip Morris USA Inc. Returned Goods Policy", new Font(Font.FontFamily.TIMES_ROMAN, 6f, Font.BOLD))));
+            _cell2.HorizontalAlignment = Element.ALIGN_RIGHT;
+            _cell2.PaddingTop = 10;
+            _cell2.Border = 0;
+            tbfooter.AddCell(_cell2);
+            tbfooter.AddCell(new Paragraph());
+            tbfooter.AddCell(new Paragraph());
+            var _celly = new PdfPCell(new Paragraph("Page" + writer.PageNumber.ToString() + "of " + (writer.PageNumber.ToString()), fontH5));//For page no.
+            _celly.HorizontalAlignment = Element.ALIGN_CENTER;
+            _celly.VerticalAlignment = Element.ALIGN_TOP;
+           // _celly.PaddingTop = 10;
+            _celly.Border = 0;
+            tbfooter.AddCell(_celly);
+            tbfooter.AddCell(new Paragraph());
+            tbfooter.AddCell(new Paragraph());
+            float[] widths1 = new float[] { 20f, 20f, 200f };
+            tbfooter.SetWidths(widths1);
+            tbfooter.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin), writer.DirectContent);
 
             PdfPCell cellShiptoCutomer11 = new PdfPCell(cellShiptoCutomer);
             PdfPCell cellShiptoCutomerVal11 = new PdfPCell(cellShiptoCutomerVal);
@@ -440,17 +784,37 @@ namespace PDFDownloadPractice.Controllers
             document.Add(T8);
             document.Add(T9);
             document.Add(T10);
+            document.Add(T11);
+            document.Add(T12);
+            document.Add(T13);
+            document.Add(T14);
+            document.Add(T15);
+            document.Add(T16);
+            document.Add(T17);
+            document.Add(T18);
+            document.Add(T19);
+            document.Add(T20);
+            document.Add(T21);
             document.NewPage();
+            document.Add(T23);
+            document.Add(list1);
+            document.Add(T24);
+            document.Add(list2);
+            document.Add(T22);
+            //document.Add(T23);
+            //document.Add(T24);
+
             //PdfContentByte content1 = writer.DirectContent;
-            //Rectangle rectangle1 = new Rectangle(doc1.PageSize);
-            //rectangle.Left += doc1.LeftMargin;
-            //rectangle.Right -= doc1.RightMargin;
-            //rectangle.Top -= doc1.TopMargin;
-            //rectangle.Bottom += doc1.BottomMargin;
+            //Rectangle rectangle1 = new Rectangle(document.PageSize);
+            //rectangle.Left += document.LeftMargin;
+            //rectangle.Right -= document.RightMargin;
+            //rectangle.Top -= document.TopMargin;
+            //rectangle.Bottom += document.BottomMargin;
             content.SetLineWidth(3);
             //content.SetColorStroke(BaseColor.BLACK);
             content.Rectangle(rectangle.Left, rectangle.Bottom, rectangle.Width, rectangle.Height);
             content.Stroke();
+            tbfooter.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin), writer.DirectContent);
             //PdfPTable T7 = new PdfPTable(1);
             //PdfPCell cell32 = new PdfPCell(new Phrase("Line item details are at the end of RGA.", font));
             ////cell28.VerticalAlignment = 1;
@@ -458,7 +822,7 @@ namespace PDFDownloadPractice.Controllers
             //cell32.PaddingLeft = 10;
             //T7.AddCell(cell32);
             //T7.SpacingBefore = 8;
-            //doc1.Add(T7);
+            //document.Add(T7);
             document.Close();
         }
     }
