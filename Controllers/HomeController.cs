@@ -12,7 +12,8 @@ namespace WebApplication1.Controllers
         public ActionResult Index()
         {
             var mainPath = Server.MapPath("~/App_Data");
-            PdfHelper.GeneratePdfTesting(mainPath);
+            Html2PDFConvert.HTML2PDF(mainPath);
+            //PdfHelper.GeneratePdfTesting(mainPath);
             return View();
         }
 

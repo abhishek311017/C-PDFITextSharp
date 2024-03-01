@@ -1,0 +1,1419 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/font/OpenSansWOFF.woff) format("woff")
+}
+/* body{
+    background-color: #000!important;
+}
+input{
+    color: #000 !important;
+} */
+/* html {
+    -ms-overflow-style: scrollbar
+
+} */
+
+@font-face {
+    font-family: 'Open Sans Condensed Bold';
+    src: url(/assets/font/OpenSans-CondBold-webfont.woff) format("woff")
+}
+
+.pagination-document-text {
+    margin-top: 6px!important;
+    width: 72px!important
+}
+
+.doccenter-hellip {
+    display: none!important
+}
+
+.div-company-selection input[type=checkbox],.div-select-company input[type=checkbox] {
+    margin-right: 10px!important;
+    width: 20px;
+    height: 20px;
+    margin-top: 5px
+}
+
+.div-company-selection span,.div-select-company span {
+    display: inline-block;
+    position: relative;
+    top: -5px
+}
+
+.termination-reason-check input[type=checkbox] {
+    height: 20px!important;
+    width: 20px!important
+}
+
+.termination-agreement-check-row label {
+    margin-left: 20px!important;
+    z-index: 0;
+    position: relative
+}
+
+.termination-agreement-check-row input[type=checkbox] {
+    height: 20px!important;
+    width: 20px!important;
+    margin-left: 50px!important;
+    z-index: 10;
+    position: relative
+}
+
+#dv-participation-level {
+    width: 20%
+}
+
+#dv-pmo {
+    width: 30%
+}
+
+#lbl-opco-chk {
+    padding-top: 8px!important
+}
+
+#lbl-opco-chk span {
+    padding-top: 3px!important
+}
+
+.llcpadzero {
+    padding: 0!important
+}
+
+.execute-pagination li a {
+    color: #F60!important
+}
+
+.execute-pagination li a:hover {
+    background-color: #ffe8d9!important
+}
+
+.execute-pagination .unavailable a {
+    color: #000!important
+}
+
+.execute-pagination .unavailable a:hover {
+    background-color: #efefef!important
+}
+
+.execute-pagination .current a {
+    background-color: #DADADA!important;
+    color: #000!important
+}
+
+.execute-scroll {
+    color: #d8d8d8!important;
+    font-size: 28px;
+    padding-left: 10px!important;
+    margin-top: 60px;
+    cursor: pointer
+}
+
+.lbl-header-area-color {
+    background-color: #000;
+    padding-top: 1px!important;
+    padding-bottom: 3px!important;
+    padding-left: 3px!important;
+    color: #fff!important
+}
+
+.lbl-header-text-color {
+    color: red!important;
+    border: 1px solid #000;
+    padding-bottom: 18px!important
+}
+
+.lbl-header-text-color-span {
+    color: red!important
+}
+
+.blank-space {
+    height: 1px
+}
+
+#div-texwidget hr {
+    margin: 1.25rem 0 1.1875rem!important
+}
+
+.template-holder-main-container {
+    height: 600px!important
+}
+
+#div-template-holder-main-container {
+    padding-left: 5px!important;
+    padding-right: 5px!important;
+    border: 1px solid #d3d3d3;
+    margin-right: 1px;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    overflow-x: hidden
+}
+
+#div-template-holder-main-container #div-sign-popup,#div-template-holder-main-container .share-of-space,#div-template-holder-main-container .widget-table-content-row,#div-template-holder-main-container .widget-table-header-row {
+    overflow: hidden
+}
+
+#div-template-holder-main-container .scaling-svg-container {
+    position: relative;
+    padding-bottom: 50%;
+    margin-bottom: 20px!important
+}
+
+#div-template-holder-main-container .scaling-svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0
+}
+
+#div-template-holder-main-container .execute-contract-container {
+    padding-right: 0!important;
+    padding-left: 0!important
+}
+
+#div-template-holder-main-container [data-abide] .error small.error,#div-template-holder-main-container [data-abide] .error span.error,#div-template-holder-main-container [data-abide] small.error,#div-template-holder-main-container [data-abide] span.error {
+    line-height: 1rem!important
+}
+
+#div-template-holder-main-container input[type=text]+small.error {
+    margin-top: -14px
+}
+
+#div-template-holder-main-container label.error+small.error {
+    margin-left: 25px
+}
+
+#div-template-holder-main-container label {
+    font-size: .875rem;
+    color: #4d4d4d;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0
+}
+
+#div-template-holder-main-container .radio input[type=radio]:checked+label:after,#div-template-holder-main-container .radioTestclass input[type=radio]:checked+label:after {
+    top: calc(12% + 4px)!important
+}
+
+#div-template-holder-main-container .radio input[type=radio]+label:before,#div-template-holder-main-container .radioTestclass input[type=radio]+label:before {
+    top: 12%!important
+}
+
+#div-template-holder-main-container input[disabled],#div-template-holder-main-container textarea[disabled] {
+    opacity: 1
+}
+
+#div-template-holder-main-container label.error {
+    color: #ce4241!important;
+    font-size: .83rem;
+    font-style: inherit;
+    font-weight: 600;
+    display: block
+}
+
+#div-template-holder-main-container .share-details-checkbox,#div-template-holder-main-container input[type=radio] {
+    display: block!important
+}
+
+#div-template-holder-main-container input[type=email],#div-template-holder-main-container input[type=text] {
+    width: 100%;
+    margin: 0 0 1rem;
+    font-size: .875rem!important
+}
+
+#div-template-holder-main-container .span-label-radio,#div-template-holder-main-container .span-labeltaxid-radio-no,#div-template-holder-main-container .span-labeltaxid-radio-yes {
+    width: auto!important
+}
+
+#div-template-holder-main-container .execute-scroll {
+    color: #d8d8d8!important;
+    font-size: 28px;
+    padding-left: 10px!important;
+    margin-top: 60px;
+    pointer: cursor
+}
+
+#div-template-holder-main-container .executeError {
+    margin-top: 27px!important;
+    font-size: 5px
+}
+
+#div-template-holder-main-container .mask-document {
+    position: absolute;
+    left: -1.1%;
+    top: 0;
+    z-index: 1000;
+    opacity: .2;
+    width: 103%;
+    height: 100%;
+    background-color: #000
+}
+
+#div-template-holder-main-container .documents-pending-mask {
+    position: absolute;
+    width: 70%;
+    left: 12%;
+    height: 160px;
+    top: 50px;
+    z-index: 1001;
+    margin-top: 50px;
+    background-color: #fff
+}
+
+#div-template-holder-main-container #txt-selected-contract-plan-type-check-two,#div-template-holder-main-container #txt-selected-contract-plan-type-s12-t12 {
+    margin-left: 31px
+}
+
+#div-template-holder-main-container .label-radio-field>div,#div-template-holder-main-container .label-text-field-affDist>div,#div-template-holder-main-container .label-text-field-tax-number>div,#div-template-holder-main-container .label-text-field>div,#div-template-holder-main-container .label-top-text-field>div,#div-template-holder-main-container .question-text>div {
+    margin-left: 8px!important
+}
+
+#div-template-holder-main-container .span-lbl-chkbox {
+    vertical-align: 6px;
+    font-weight: 700
+}
+
+#div-template-holder-main-container .label-check span,#div-template-holder-main-container .lbl-chkBox span {
+    padding-left: 1px!important
+}
+
+#div-template-holder-main-container .plan-election-text {
+    margin-bottom: 0!important
+}
+
+#div-template-holder-main-container #lbl-plan-election-plan-code {
+    font-weight: 700
+}
+
+#div-template-holder-main-container .no-of-stores-cell {
+    min-height: 40px;
+    border-right: #d8d8d8 solid 1px
+}
+
+#div-template-holder-main-container .no-of-stores-cell input[type=text] {
+    min-height: 51px
+}
+
+#div-template-holder-main-container .table-widget {
+    margin-bottom: 15px!important;
+    border-bottom: 1px solid #d8d8d8
+}
+
+#div-template-holder-main-container .table-title {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .plan-table-title {
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+    margin-bottom: 5px!important;
+    padding-right: 75px!important
+}
+
+#div-template-holder-main-container .plan-election-table-title {
+    font-weight: 700;
+    padding-left: 15px!important;
+    font-size: 17px;
+    text-decoration: underline;
+    margin-bottom: 15px!important
+}
+
+#div-template-holder-main-container .merchandising-payment-table-title {
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+    text-decoration: underline;
+    margin-bottom: 25px!important
+}
+
+#div-template-holder-main-container .table-sub-header {
+    background-color: #E6E6E6
+}
+
+#div-template-holder-main-container .plan-election-header {
+    margin-bottom: 10px!important;
+    border-bottom: 1px solid #d8d8d8
+}
+
+#div-template-holder-main-container #txt-plan-election-no-of-stores {
+    height: 40px!important
+}
+
+#div-template-holder-main-container .table-empty-header {
+    height: 46px
+}
+
+#div-template-holder-main-container .widget-cell-empty {
+    height: 37px
+}
+
+#div-template-holder-main-container .max-share-applicable-for-JMC {
+    padding-left: 2.1%
+}
+
+#div-template-holder-main-container .merchandising-widget-cell {
+    padding: 10px!important;
+    border: 1px solid #d8d8d8;
+    font-size: 15px
+}
+
+#div-template-holder-main-container .plan-type-check-two input[type=checkbox],#div-template-holder-main-container .plan-type-s12-t12 input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    margin-top: 0
+}
+
+#div-template-holder-main-container .prev-account-suspension-label {
+    color: red!important;
+    font-weight: 700!important
+}
+
+#div-template-holder-main-container .prev-account-suspension-check {
+    margin-top: 8px!important
+}
+
+#div-template-holder-main-container #lbl-plan-pos-plan {
+    font-weight: 700!important
+}
+
+#div-template-holder-main-container .retailer-info-retailer-selection,#div-template-holder-main-container .store-details-ownershiptype {
+    padding-top: 10px!important;
+    border: 5px solid #ED1C24;
+    padding-left: 5px!important
+}
+
+#div-template-holder-main-container .retailer-info-retailer-selection {
+    padding-top: 15px!important;
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .black-border {
+    border: 2px solid #000
+}
+
+#div-template-holder-main-container .text-widget-horizontal line {
+    border: 2px solid #000!important
+}
+
+#div-template-holder-main-container .text-widget-general-text>Label {
+    font-size: 14px
+}
+
+#div-template-holder-main-container .text-IncentiveOptionChange {
+    padding-left: 8%!important;
+    padding-right: 7%!important
+}
+
+#div-template-holder-main-container .widget-selected-contract {
+    margin-top: 10px!important
+}
+
+#div-template-holder-main-container .span-label-radio,#div-template-holder-main-container .span-labeltaxid-radio-no,#div-template-holder-main-container .span-labeltaxid-radio-yes {
+    float: left;
+    margin-top: 1px!important;
+    margin-right: 6px!important
+}
+
+#div-template-holder-main-container .document-taxid {
+    float: left!important;
+    margin-top: 2px!important
+}
+
+#div-template-holder-main-container .span-labeltaxid-radio-yes {
+    padding-left: 38%!important
+}
+
+#div-template-holder-main-container .span-labeltaxid-radio-no {
+    padding-left: 5%!important
+}
+
+#div-template-holder-main-container .label-text-field label,#div-template-holder-main-container .label-text-field-tax-number label {
+    padding-top: 7px!important
+}
+
+#div-template-holder-main-container .label-text-field-tax-number {
+    right: 24.9%!important
+}
+
+#div-template-holder-main-container .label-top-radio-bottom-tax-check {
+    left: 25%!important
+}
+
+#div-template-holder-main-container .label-text-field-affDist>div div {
+    height: 40px!important
+}
+
+#div-template-holder-main-container .label-text-field-affDist label {
+    text-align: center!important
+}
+
+#div-template-holder-main-container .execute-document-home-link {
+    color: #000!important
+}
+
+#div-template-holder-main-container .label-radio-field label {
+    line-height: 1!important
+}
+
+#div-template-holder-main-container .label-radio-storefield {
+    top: 36px;
+    position: absolute;
+    margin-left: 26%!important;
+    padding-top: 15px!important
+}
+
+#div-template-holder-main-container .label-radio-storefield>div:nth-child(1) {
+    margin-top: 10px;
+    margin-right: 10px!important;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    border-bottom: #000 solid 0
+}
+
+#div-template-holder-main-container .label-radio-storefield>div:nth-child(2) {
+    margin-top: 10px;
+    margin-right: 10px!important;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    border: 1px solid #000;
+    border-top: #000 solid 0;
+    border-bottom: #000 solid 1px
+}
+
+#div-template-holder-main-container .label-radio-storefield>div:nth-child(3) {
+    margin-top: 10px;
+    margin-right: 10px!important;
+    padding-left: 10px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    border-top: #000 solid 0
+}
+
+#div-template-holder-main-container #rbtn-retailerstore-details-ownership-type-chain,#div-template-holder-main-container #rbtn-retailerstore-details-ownership-type-indep,#div-template-holder-main-container #rbtn-store-details-ownership-type-chain,#div-template-holder-main-container #rbtn-store-details-ownership-type-indep {
+    float: left!important;
+    margin-top: 5px!important
+}
+
+#div-template-holder-main-container .label-radio-field-radio {
+    padding-left: 8px!important
+}
+
+#div-template-holder-main-container .label-radio-field-radio input[type=radio] {
+    height: 16px!important;
+    width: 16px!important
+}
+
+#div-template-holder-main-container .check-box-label-field>div {
+    margin-left: 8px!important
+}
+
+#div-template-holder-main-container .widget-table-header-row label {
+    line-height: 2.3125rem!important
+}
+
+#div-template-holder-main-container .div-company-sel-contract-selection-plan-text.retail-plan {
+    margin-top: 3%!important;
+    margin-left: 10%!important
+}
+
+#div-template-holder-main-container .plan-election-content .plan-election-label {
+    line-height: 1.3125rem!important
+}
+
+#div-template-holder-main-container .share-of-space {
+    border-right: #d8d8d8 solid 1px;
+    padding-bottom: 99999px!important;
+    margin-bottom: -99999px!important
+}
+
+#div-template-holder-main-container .fixture-layout,#div-template-holder-main-container .ocma-layout,#div-template-holder-main-container .pmusa-rates-header {
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .widget-table-column label,#div-template-holder-main-container .widget-table-column-planelection label {
+    word-wrap: break-word
+}
+
+#div-template-holder-main-container .vehicle-condition-table-last-row {
+    border: 1px solid #d8d8d8!important
+}
+
+#div-template-holder-main-container .widget-table-column {
+    min-height: 40px
+}
+
+#div-template-holder-main-container .widget-table-column-planelection {
+    min-height: 26px
+}
+
+#div-template-holder-main-container .widget-table-column-planelection label {
+    line-height: .3125rem!important
+}
+
+#div-template-holder-main-container .widget-table-column-subheader {
+    min-height: 35px
+}
+
+#div-template-holder-main-container .share-details-row>div {
+    padding-left: 10px!important
+}
+
+#div-template-holder-main-container .max-share-applicable>div {
+    padding-left: 0!important
+}
+
+#div-template-holder-main-container .acknowledge-list li {
+    margin-top: 10px!important;
+    font-size: 104px
+}
+
+#div-template-holder-main-container .widget-plan-exibhit {
+    margin-bottom: 20px!important
+}
+
+#div-template-holder-main-container #div-plan-agreement-text {
+    border: 1px solid #000;
+    border-bottom: #000 solid 0;
+    padding: 5px
+}
+
+#div-template-holder-main-container #div-plan-table {
+    border: 1px solid #000;
+    border-bottom: #000 solid 0;
+    border-top: #000 solid 0
+}
+
+#div-template-holder-main-container .div-election {
+    border: none!important
+}
+
+#div-template-holder-main-container #div-plan-election {
+    border: 1px solid #000;
+    border-top: #000 solid 0;
+    border-bottom: #000 solid 0
+}
+
+#div-template-holder-main-container #div-merchandising-payment {
+    border: 1px solid #000;
+    border-top: #000 solid 0
+}
+
+#div-template-holder-main-container .helper-text,#div-template-holder-main-container .pl-helpertext,#div-template-holder-main-container [data-abide] small {
+    white-space: normal!important;
+    position: relative!important;
+    min-width: inherit!important
+}
+
+#div-template-holder-main-container .template-widgets-section {
+    margin-top: 15px!important
+}
+
+#div-template-holder-main-container .template-section {
+    margin-top: 5px!important
+}
+
+#div-template-holder-main-container .widget-store-details {
+    margin-top: 10px!important
+}
+
+#div-template-holder-main-container .retail-signature-container {
+    padding-right: 2%!important;
+    padding-left: 2%!important
+}
+
+#div-template-holder-main-container .widget-agdc-representative-sig,#div-template-holder-main-container .widget-agdc-retailer-signature {
+    margin-top: 40px!important
+}
+
+#div-template-holder-main-container .contract-retailer-label {
+    margin-bottom: 21px
+}
+
+#div-template-holder-main-container .retailer-signature-button-container {
+    margin-bottom: 41px!important
+}
+
+#div-template-holder-main-container .retailer-sig-Date-label {
+    padding-left: 3px;
+    margin-top: 35px
+}
+
+#div-template-holder-main-container input {
+    border-bottom-left-radius: 0!important;
+    border-top-left-radius: 0!important
+}
+
+#div-template-holder-main-container .agdc-repsig-date-text,#div-template-holder-main-container .retailer-repsig-date-text {
+    margin-top: 28px!important;
+    padding-right: 1px!important
+}
+
+#div-template-holder-main-container .signature-label {
+    line-height: 2.3125rem!important
+}
+
+#div-template-holder-main-container .agdc-rep-container-heading {
+    min-height: 21px
+}
+
+#div-template-holder-main-container .agdc-repsig-date-label {
+    padding-left: 3px;
+    margin-top: 35px
+}
+
+#div-template-holder-main-container .agdc-repsig-agdc-mng-label {
+    margin-bottom: 20px!important;
+    min-height: 21px
+}
+
+#div-template-holder-main-container .signature-date {
+    float: right!important
+}
+
+#div-template-holder-main-container .document-add-distributors {
+    font-family: Open Sans Condensed Bold;
+    border-left: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    margin-top: 2px;
+    padding: 10px;
+    background-color: #efefef!important;
+    color: #F60!important
+}
+
+#div-template-holder-main-container .document-add-distributors,#div-template-holder-main-container .input-affiliated-distributor-field,#div-template-holder-main-container .input-distributors-participant-field,#div-template-holder-main-container .label-affiliated-distributor-field,#div-template-holder-main-container .label-distributors-participant-field,#div-template-holder-main-container .remove-distributor-container {
+    border-right: 1px solid #d8d8d8
+}
+
+#div-template-holder-main-container .document-add-distributors>div:last-child {
+    float: left;
+    font-size: 13px;
+    margin-top: 2px;
+    margin-left: 10px
+}
+
+#div-template-holder-main-container .document-add-distributors>div:first-child {
+    float: left;
+    font-size: 15px;
+    cursor: pointer
+}
+
+#div-template-holder-main-container #div-add-distributors {
+    cursor: pointer!important;
+    width: 122px!important
+}
+
+#div-template-holder-main-container #div-contest-budget-chain,#div-template-holder-main-container .input-affiliated-distributor-field,#div-template-holder-main-container .input-distributors-participant-field,#div-template-holder-main-container .input-distributors-participant-field-distributor-retail,#div-template-holder-main-container .input-distributors-participant-field-owner,#div-template-holder-main-container .label-affiliated-distributor-field,#div-template-holder-main-container .label-distributors-participant-field,#div-template-holder-main-container .remove-distributor-container {
+    padding-bottom: 99999px!important;
+    margin-bottom: -99999px!important
+}
+
+#div-template-holder-main-container .affiliated-distributor-data,#div-template-holder-main-container .affiliated-distributor-header,#div-template-holder-main-container .distributors-participant-data,#div-template-holder-main-container .distributors-participant-header {
+    border: 1px solid #d8d8d8;
+    border-right: 0 solid #d8d8d8;
+    overflow: hidden
+}
+
+#div-template-holder-main-container .error-affiliated-distributor,#div-template-holder-main-container .error-distributor {
+    padding: 12px!important;
+    border: 1px solid #d8d8d8;
+    border-top: 0 solid #d8d8d8!important
+}
+
+#div-template-holder-main-container .span-noaffiliateddistributor,#div-template-holder-main-container .span-nodistributor {
+    font-size: 13px;
+    font-weight: 700;
+    color: #F60!important
+}
+
+#div-template-holder-main-container .label-affiliated-distributor-field label,#div-template-holder-main-container .label-distributors-participant-field label {
+    padding-left: 6px!important;
+    padding-bottom: 10px!important;
+    padding-top: 10px!important;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center!important
+}
+
+#div-template-holder-main-container .distributors-participant-popup-container {
+    padding-left: 10px!important
+}
+
+#div-template-holder-main-container .distributorpopup-name-txt {
+    width: 40%!important
+}
+
+#div-template-holder-main-container .distributors-participant-popup .distributor-inline-label {
+    padding-top: 6px!important
+}
+
+#div-template-holder-main-container .input-distributors-participant-popfield,#div-template-holder-main-container .input-distributors-participant-popfield-addr {
+    padding-right: 2%!important
+}
+
+#div-template-holder-main-container #btn-add-distributor-cancel,#div-template-holder-main-container #btn-save-distributor {
+    margin-bottom: 20px!important
+}
+
+#div-template-holder-main-container #btn-filterbar-documentsearch-filter,#div-template-holder-main-container #btn-save-distributor,#div-template-holder-main-container filterbar-documentfilter {
+    text-align: center!important;
+    padding: 0!important
+}
+
+#div-template-holder-main-container #btn-filterbar-documentfilter,#div-template-holder-main-container #btn-filterbar-documentsearch-filter,#div-template-holder-main-container #btn-save-distributor,#div-template-holder-main-container #div-execute-contract-buttons button,#div-template-holder-main-container .action-button {
+    background-color: #F60;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Open Sans
+}
+
+#div-template-holder-main-container #btn-add-distributor-cancel {
+    float: left!important
+}
+
+#div-template-holder-main-container #btn-add-distributor-cancel,#div-template-holder-main-container #div-execute-contract-buttons button,#div-template-holder-main-container .action-button {
+    width: auto!important;
+    height: auto!important;
+    margin-right: 5%;
+    padding: 10px 20px!important
+}
+
+#div-template-holder-main-container #btn-add-distributor-cancel,#div-template-holder-main-container #btn-add-distributor-validation-cancel,#div-template-holder-main-container #btn-filterbar-documentclear,#div-template-holder-main-container #btn-filterbar-documentsearch-clear {
+    background-color: #febc11
+}
+
+#div-template-holder-main-container #btn--document-report-export,#div-template-holder-main-container #btn-add-distributor-cancel,#div-template-holder-main-container #btn-add-distributor-validation-cancel,#div-template-holder-main-container #div-execute-contract-buttons button,#div-template-holder-main-container .action-button,#div-template-holder-main-container .button-clearfilterbar-document {
+    color: #fff!important;
+    width: 70px;
+    cursor: pointer!important;
+    text-align: center!important;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: Open Sans;
+    height: 36px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    float: right
+}
+
+#div-template-holder-main-container .distributors-participant-popup #div-addattachments-popup .icon-rws-delete {
+    margin-right: 6%!important
+}
+
+#div-template-holder-main-container #icon-rws-close {
+    width: 4%;
+    margin-right: 5%;
+    float: right;
+    font-size: 29px;
+    height: 23px
+}
+
+#div-template-holder-main-container #btn-save-distributor {
+    width: 92px!important;
+    height: auto!important;
+    margin-right: 2%;
+    cursor: pointer;
+    color: #fff!important;
+    float: right!important;
+    padding: 10px 20px!important
+}
+
+#div-template-holder-main-container .document-pending-text {
+    padding-top: 20px;
+    font-size: 28px;
+    margin-left: 5%!important
+}
+
+#div-template-holder-main-container .horizontal-grid-bar {
+    background-color: #E6E6E6;
+    height: 14px!important;
+    border: 1px solid #000
+}
+
+#div-template-holder-main-container .text-widget-header>Label {
+    font-size: 18px
+}
+
+#div-template-holder-main-container .text-widget-general-text>Label>ul {
+    font-size: 14px
+}
+
+#div-template-holder-main-container .text-widget-header-medium>Label {
+    font-size: 15px
+}
+
+#div-template-holder-main-container .wholesale-request-header {
+    font-weight: 700;
+    text-decoration: underline
+}
+
+#div-template-holder-main-container .total-engagement-text {
+    font-size: 18px!important;
+    font-weight: 700
+}
+
+#div-template-holder-main-container .widget-contract-selection {
+    margin-top: 20px!important
+}
+
+#div-template-holder-main-container .label-radio-label-field>div {
+    margin-left: 8px!important;
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .label-radio-label-field input[type=radio],#div-template-holder-main-container .label-top-radio-bottom input[type=radio],#div-template-holder-main-container .label-top-radio-bottom-tax-check input[type=radio] {
+    height: 22px!important;
+    width: 16px!important
+}
+
+#div-template-holder-main-container .label-radio-label-field input[type=radio] {
+    margin-top: 5px!important
+}
+
+#div-template-holder-main-container .widget-contract-rates {
+    margin-top: 20px!important
+}
+
+#div-template-holder-main-container .widget-contract-rates,#div-template-holder-main-container .widget-plan-exibhit {
+    margin-bottom: 20px!important
+}
+
+#div-template-holder-main-container .fixture-layout,#div-template-holder-main-container .ocma-layout,#div-template-holder-main-container .pmusa-rates-header {
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .pmusa-rates-header label {
+    font-size: 18px;
+    font-weight: 700
+}
+
+#div-template-holder-main-container .widget-table {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    float: none!important
+}
+
+#div-template-holder-main-container .widget-table-header-row {
+    border: 1px solid #d8d8d8;
+    border-bottom: none
+}
+
+#div-template-holder-main-container #div-widget-table-header-row div:nth-child(1),#div-template-holder-main-container #div-widget-table-header-row div:nth-child(2),#div-template-holder-main-container #div-widget-table-header-row div:nth-child(3),#div-template-holder-main-container #div-widget-table-header-row div:nth-child(4) {
+    padding-bottom: 99999px!important;
+    margin-bottom: -99999px!important;
+    word-break: break-word
+}
+
+#div-template-holder-main-container .widget-table-column-header {
+    border-right: #d8d8d8 solid 1px;
+    padding: 14px 1.5%!important
+}
+
+#div-template-holder-main-container #div-widget-table-header-row div:nth-child(1) label,#div-template-holder-main-container #div-widget-table-header-row div:nth-child(2) label,#div-template-holder-main-container #div-widget-table-header-row div:nth-child(3) label,#div-template-holder-main-container #div-widget-table-header-row div:nth-child(4) label {
+    font-size: 14px!important;
+    font-weight: 700!important;
+    line-height: 1.3125rem!important;
+    padding-bottom: 10px!important
+}
+
+#div-template-holder-main-container .widget-table .widget-table-content-row:last-child,#div-template-holder-main-container .widget-table .widget-table-header-row:last-child {
+    border-bottom: #d8d8d8 solid 1px
+}
+
+#div-template-holder-main-container .widget-table-content-row {
+    border: 1px solid #d8d8d8;
+    border-bottom: none
+}
+
+#div-template-holder-main-container #div-contract-rates-datacontainer div:nth-child(1),#div-template-holder-main-container #div-contract-rates-datacontainer div:nth-child(2),#div-template-holder-main-container #div-contract-rates-datacontainer div:nth-child(3) {
+    border-right: #d8d8d8 solid 1px!important
+}
+
+#div-template-holder-main-container .widget-table-column,#div-template-holder-main-container .widget-table-column-planelection,#div-template-holder-main-container .widget-table-column-subheader {
+    text-align: center;
+    padding-top: 9px!important;
+    padding-left: 2%!important;
+    padding-right: 2%!important;
+    border-right: #d8d8d8 solid 1px
+}
+
+#div-template-holder-main-container .label-top-radio-bottom label,#div-template-holder-main-container .label-top-radio-bottom-tax-check label {
+    line-height: 1.2!important
+}
+
+#div-template-holder-main-container #ajax-busy,#div-template-holder-main-container .hide,#div-template-holder-main-container .label-uncheck span {
+    display: none
+}
+
+#div-template-holder-main-container #div-template-holder-main-container input {
+    border-bottom-left-radius: 0!important;
+    border-top-left-radius: 0!important
+}
+
+#div-template-holder-main-container .fixture-layout-header,#div-template-holder-main-container .ocma-layout-header {
+    font-size: 14px;
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .fixture-layout-image,#div-template-holder-main-container .ocma-layout-image {
+    margin-left: 10px!important;
+    width: 98%!important;
+    border: 1px solid #000;
+    text-align: center!important
+}
+
+#div-template-holder-main-container .fixture-layout,#div-template-holder-main-container .ocma-layout {
+    width: auto!important;
+    height: auto!important;
+    margin-top: 10px!important
+}
+
+#div-template-holder-main-container .agdc-approving-manager-content,#div-template-holder-main-container .retail-agreement-content,#div-template-holder-main-container .sc-validation-content {
+    border: 1px solid #000
+}
+
+#div-template-holder-main-container input[type=checkbox] {
+    display: block
+}
+
+#div-template-holder-main-container .share-details-row {
+    margin-left: 8px!important;
+    margin-right: 10px!important;
+    padding-top: 15px!important
+}
+
+#div-template-holder-main-container .max-share-applicable {
+    margin-left: 0!important
+}
+
+#div-template-holder-main-container .widget-auto-promo-acpt {
+    margin-top: 10px!important;
+    margin-bottom: 10px!important
+}
+
+#div-template-holder-main-container .auto-promo-acceptance {
+    border: 1px solid #000;
+    padding-top: 10px!important
+}
+
+#div-template-holder-main-container .auto-promo-acceptance .lbl-label-chkbox {
+    margin-bottom: 1%
+}
+
+#div-template-holder-main-container #chk-retailer-info-individual-indicator {
+    margin-left: 24%!important
+}
+
+#div-template-holder-main-container .check-box-label-field input[type=checkbox],#div-template-holder-main-container .share-details-row input[type=checkbox] {
+    height: 20px!important;
+    width: 20px!important
+}
+
+#div-template-holder-main-container .document-autopromo-chkbox,#div-template-holder-main-container .document-chkbox-label,#div-template-holder-main-container .document-retailagreement-chkbox,#div-template-holder-main-container .document-retailsection-chkbox,#div-template-holder-main-container .document-scvalidation-chkbox {
+    float: left!important
+}
+
+#div-template-holder-main-container .lbl-label-chkbox,#div-template-holder-main-container .span-label-chkbox {
+    margin-left: 5px!important
+}
+
+#div-template-holder-main-container .document-retailagreement-chkbox,#div-template-holder-main-container .document-scvalidation-chkbox {
+    margin-top: 10px!important;
+    margin-right: 8px!important
+}
+
+#div-template-holder-main-container #chk-wholesaler-agreement-wholesaler-agreement {
+    margin-top: 19px!important
+}
+
+#div-template-holder-main-container .west-call-validation {
+    padding: 5px!important
+}
+
+#div-template-holder-main-container .check-box-label-field label {
+    line-height: 1.4!important;
+    margin-bottom: 1%
+}
+
+#div-template-holder-main-container input[id^=rbtn-plan-table-plan-participation],#div-template-holder-main-container input[id^=rbtn-election-table-plan-participation] {
+    width: 13px!important;
+    display: inline-block!important
+}
+
+#div-template-holder-main-container .signature {
+    border-radius: .4em;
+    cursor: crosshair;
+    border: 1px solid grey;
+    background-color: #fff;
+    height: 100px;
+    width: 100%
+}
+
+#div-template-holder-main-container .widget-retail-officers {
+    border: 1px solid #000;
+    padding-top: 10px!important;
+    margin-top: 20px!important;
+    min-height: 50px
+}
+
+#div-template-holder-main-container .participant-label {
+    padding-right: 14px!important;
+    text-align: right!important
+}
+
+#div-template-holder-main-container .widget-table-header-row label {
+    font-size: 13px!important;
+    font-weight: 700!important
+}
+
+#div-template-holder-main-container .widget-table-content-row .widget-table-column-header:last-child,#div-template-holder-main-container .widget-table-content-row .widget-table-column-planelection:last-child,#div-template-holder-main-container .widget-table-content-row .widget-table-column-subheader:last-child,#div-template-holder-main-container .widget-table-content-row .widget-table-column:last-child,#div-template-holder-main-container .widget-table-header-row .widget-table-column-header:last-child,#div-template-holder-main-container .widget-table-header-row .widget-table-column-planelection:last-child,#div-template-holder-main-container .widget-table-header-row .widget-table-column-subheader:last-child,#div-template-holder-main-container .widget-table-header-row .widget-table-column:last-child {
+    border-right: none
+}
+
+#div-template-holder-main-container #lbl-document-footer-version,#div-template-holder-main-container #lbl-document-footer-versionDate {
+    font-size: 17px
+}
+
+#div-template-holder-main-container #lbl-document-footer-PosNumber {
+    float: right!important;
+    font-size: 17px!important
+}
+
+#div-template-holder-main-container .contacts-data-container,#div-template-holder-main-container .contacts-license-container {
+    border: 1px solid #d8d8d8;
+    padding-right: 3%!important;
+    padding-top: 15px!important
+}
+
+#div-template-holder-main-container #txt-criminal-text-area-text,#div-template-holder-main-container #txt-remote-text-area-text {
+    height: 86px;
+    margin-bottom: 0!important;
+    resize: none;
+    width: 100%
+}
+
+#div-template-holder-main-container .comment-box {
+    height: 186px;
+    margin-bottom: 0!important;
+    resize: none;
+    width: 100%
+}
+
+#div-template-holder-main-container input[id^=rbtn-plan-table-plan-participation] {
+    width: 13px!important;
+    display: inline-block!important
+}
+
+#div-template-holder-main-container .document-pending-text-container {
+    margin-top: 20px!important;
+    font-size: 14px;
+    margin-left: 5%!important;
+    font-weight: 700;
+    background-color: #00B5DE;
+    color: #fff!important;
+    margin-right: 5%!important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center!important
+}
+
+#div-template-holder-main-container .remove-distributor {
+    color: #F60!important;
+    font-size: 19px;
+    cursor: pointer!important
+}
+
+#div-template-holder-main-container .remove-distributor-container {
+    width: 3%!important;
+    padding-top: 1%!important
+}
+
+#div-template-holder-main-container [id^=lbl-city-],#div-template-holder-main-container [id^=lbl-direct-ndd-],#div-template-holder-main-container [id^=lbl-distributor-retail-],#div-template-holder-main-container [id^=lbl-management-account-],#div-template-holder-main-container [id^=lbl-name-],#div-template-holder-main-container [id^=lbl-nature-of-agreement-],#div-template-holder-main-container [id^=lbl-owner-partner-],#div-template-holder-main-container [id^=lbl-state-],#div-template-holder-main-container [id^=lbl-street-address-line1-],#div-template-holder-main-container [id^=lbl-street-address-line2-],#div-template-holder-main-container [id^=lbl-zip-] {
+    margin: 5px!important;
+    word-wrap: break-word;
+    line-height: 16px!important
+}
+
+#div-template-holder-main-container .additional-details textarea {
+    width: 100%!important;
+    resize: none
+}
+
+#div-template-holder-main-container .distributor-line-height {
+    line-height: .9!important
+}
+
+#div-template-holder-main-container .date-from-to-label {
+    line-height: 2.3!important
+}
+
+#div-template-holder-main-container .wholesale-rep-inc-margin-top {
+    margin-top: -4px!important
+}
+
+#div-template-holder-main-container .request-header-label {
+    margin-top: 41px!important
+}
+
+#div-template-holder-main-container .wholesale-request-label {
+    margin-top: 12px!important
+}
+
+#div-template-holder-main-container .additional-details textarea[disabled],#div-template-holder-main-container .date-disabled input[disabled] {
+    background-color: #e7e7e7!important;
+    border: 1px solid #dadada
+}
+
+#div-template-holder-main-container .wholesale-request-check {
+    margin-left: 24px!important;
+    height: 16px;
+    width: 16px
+}
+
+#div-template-holder-main-container .dates-div-width,#div-template-holder-main-container .dates-div-width-from-to {
+    width: 88%!important
+}
+
+#div-template-holder-main-container .dates-div-width-from-to>span>span,#div-template-holder-main-container .dates-div-width>span>span {
+    background-color: #fff!important
+}
+
+#div-template-holder-main-container .documentation-required-description {
+    margin-top: 10px!important;
+    margin-left: 25px!important
+}
+
+#div-template-holder-main-container .documentation-required {
+    border: 1px solid #000;
+    padding: 5px!important;
+    background-color: #F7E820!important;
+    font-weight: 700
+}
+
+#div-template-holder-main-container .blank-space {
+    height: 1px
+}
+
+#div-template-holder-main-container .option-radio {
+    float: left;
+    height: 16px!important;
+    width: 16px!important;
+    margin-top: 2px!important;
+    margin-bottom: 5px!important
+}
+
+#div-template-holder-main-container .question-option {
+    margin-left: 8px!important
+}
+
+#div-template-holder-main-container .option-text {
+    float: left;
+    display: inline-block!important;
+    margin-top: -1px!important;
+    margin-left: 8px!important;
+    margin-right: 0!important;
+    font-size: .875rem;
+    width: calc(100% - 30px)!important
+}
+
+#div-template-holder-main-container .question-text {
+    padding-bottom: 11px!important
+}
+
+#div-template-holder-main-container .pog-details-agree-widget {
+    margin-top: 5%!important
+}
+
+#div-template-holder-main-container .div-pog-details-widget {
+    font-size: 14px!important;
+    margin-top: 5%
+}
+
+#div-template-holder-main-container .lbl-pog-details-text {
+    line-height: 2.4!important
+}
+
+#div-template-holder-main-container .pog-details-pog-number {
+    margin-right: 10px!important
+}
+
+#div-template-holder-main-container .div-pog-details-widget [id$=-chain-hq-name],#div-template-holder-main-container .div-pog-details-widget [id$=-pog-number] {
+    margin-bottom: 0!important
+}
+
+#div-template-holder-main-container #div-chk-document-attached {
+    padding-top: 3%;
+    margin-left: 3%
+}
+
+#div-template-holder-main-container .lbl-header-text-color-span {
+    color: red!important
+}
+
+#div-template-holder-main-container .lbl-header-text-color {
+    color: red!important;
+    border: 1px solid #000;
+    padding-bottom: 18px!important
+}
+
+#div-template-holder-main-container .lbl-header-area-color {
+    background-color: #000;
+    padding-top: 1px!important;
+    padding-bottom: 3px!important;
+    padding-left: 3px!important;
+    color: #fff!important
+}
+
+#div-template-holder-main-container #div-easytrac-message {
+    text-align: left;
+    font-size: 14px;
+    color: #0696b5;
+    line-height: 1.6
+}
+
+#div-template-holder-main-container #div-easytrac-message a {
+    font-weight: 700
+}
+
+#div-template-holder-main-container .resizeNone {
+    resize: none!important
+}
+
+#div-template-holder-main-container input[type=checkbox]+label:before {
+    content: none!important
+}
+
+#div-template-holder-main-container .storedetails-datediv {
+    width: 98%!important;
+    text-align: left!important
+}
+
+#div-template-holder-main-container .text-widget-general-text ul {
+    list-style-type: none;
+    margin-bottom: 0!important
+}
+
+#div-template-holder-main-container .text-widget-general-text li {
+    font-size: 14px!important
+}
+
+#div-template-holder-main-container .lbl-header-wholesale {
+    font-size: 16px!important
+}
+
+#div-template-holder-main-container .label-top-radio-bottom-tax-check>div,#div-template-holder-main-container .label-top-radio-bottom>div {
+    margin-left: 8px!important;
+    padding-bottom: 4px!important
+}
+
+#div-template-holder-main-container .chk-selected-contract-mgmt-plan-type-check {
+    display: inline!important;
+    margin-left: 12px
+}
+
+#div-template-holder-main-container [id^=lbl-city-],#div-template-holder-main-container [id^=lbl-state-],#div-template-holder-main-container [id^=lbl-zip-] {
+    display: inline-block!important
+}
+
+#div-template-holder-main-container .dp-startend-date-width {
+    width: 100%!important
+}
+
+#div-template-holder-main-container div.widget-table-column.error label {
+    color: #ce4241!important
+}
+
+#div-template-holder-main-container .pog-chk-box {
+    margin-left: 10px!important
+}
+
+#div-template-holder-main-container .error-modify-pog {
+    margin-left: 11px
+}
+
+#div-template-holder-main-container .sm-validation {
+    padding-top: 6px!important
+}
+
+#div-template-holder-main-container .horizontal-signature-label {
+    font-weight: 700
+}
+
+@media only screen and (min-width: 960px) {
+    #div-template-holder-main-container #divReview {
+        width:12.5%
+    }
+
+    #div-template-holder-main-container .date-width-from-to {
+        width: 77%!important;
+        text-align: left
+    }
+
+    #div-template-holder-main-container #pogDetails {
+        width: 6.25%
+    }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width:64em) {
+    #div-template-holder-main-container .storedetails-datediv {
+        width:93%!important;
+        text-align: left!important
+    }
+
+    #div-template-holder-main-container .radio-align {
+        float: left!important
+    }
+
+    #div-template-holder-main-container .contract-selection {
+        overflow: hidden!important
+    }
+}
+
+@media only screen and (min-width: 640px) and (max-width:959px) {
+    #div-template-holder-main-container .storedetails-datediv {
+        text-align:left!important
+    }
+
+    #div-template-holder-main-container .date-width-from-to {
+        text-align: left
+    }
+
+    #div-template-holder-main-container .radio-align {
+        float: left!important
+    }
+
+    #div-template-holder-main-container .contract-selection {
+        overflow: hidden!important
+    }
+
+    #div-template-holder-main-container .text-width {
+        width: 37%
+    }
+
+    #div-template-holder-main-container #dv-participation-level {
+        width: 28%
+    }
+
+    #div-template-holder-main-container #dv-pmo {
+        width: 38%
+    }
+}
+
+.pl-tbldp .k-select {
+    display: none!important
+}
+
+.tbl-column-allign {
+    padding-bottom: 99999px!important;
+    margin-bottom: -99999px!important
+}

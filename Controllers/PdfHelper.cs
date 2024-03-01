@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Linq;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using iTextSharp.text;
@@ -42,9 +43,9 @@ namespace PDFDownloadPractice.Controllers
             Font fontH3 = new Font(Font.FontFamily.TIMES_ROMAN, 9f, Font.BOLDITALIC, BaseColor.RED);
             Font fontH4 = new Font(Font.FontFamily.TIMES_ROMAN, 10f, Font.BOLDITALIC, BaseColor.BLACK);
             Font fontH5 = new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL, BaseColor.BLACK);
-            Font fontH6 = new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.BOLD, BaseColor.BLACK);
+            //Font fontH6 = new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.BOLD, BaseColor.BLACK);
             Font font = new Font(FontFactory.GetFont("Arial", 7f, Font.NORMAL));
-            fontH6.SetStyle(Font.UNDERLINE);
+           // fontH6.SetStyle(Font.UNDERLINE);
            // fontH6.SetStyle(Font.BOLD);
 
             PdfPTable T14 = new PdfPTable(5);
@@ -593,7 +594,7 @@ namespace PDFDownloadPractice.Controllers
             cell51.BackgroundColor = BaseColor.LIGHT_GRAY;
             cell51.BorderWidth = 1;
             T19.AddCell(cell51);
-            T19.SpacingAfter = 10;
+            T19.SpacingAfter = 3;
 
             //nested tables
             PdfPTable nested5 = new PdfPTable(6);
@@ -607,19 +608,19 @@ namespace PDFDownloadPractice.Controllers
             cell54.VerticalAlignment = Element.ALIGN_LEFT;
             cell54.Colspan = 4;
             cell54.Rowspan = 4;
-            cell54.Border = Rectangle.NO_BORDER;
+            //cell54.Border = Rectangle.NO_BORDER;
             nested5.AddCell(cell54);
 
 
             PdfPCell cell55 = (new PdfPCell(new Phrase("Direct Distributor Representative (Type in your name)", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
-            cell55.Border = Rectangle.NO_BORDER;
+            //cell55.Border = Rectangle.NO_BORDER;
             nested5.AddCell(cell55);
 
             PdfPCell cell56 = (new PdfPCell(new Phrase("test test", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
             nested5.AddCell(cell56);
 
             PdfPCell cell57 = (new PdfPCell(new Phrase("Date:", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
-            cell57.Border = Rectangle.NO_BORDER;
+            //cell57.Border = Rectangle.NO_BORDER;
             nested5.AddCell(cell57);
 
             PdfPCell cell58 = (new PdfPCell(new Phrase("10/17/2022", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
@@ -628,10 +629,10 @@ namespace PDFDownloadPractice.Controllers
 
             PdfPCell nesthousing5 = new PdfPCell(nested5);
             nesthousing5.BorderWidth = 1;
-            nesthousing5.PaddingBottom = 8;
-            nesthousing5.Border = Rectangle.NO_BORDER;
+            //nesthousing5.PaddingBottom = 3;
+            //nesthousing5.Border = Rectangle.NO_BORDER;
             T20.AddCell(nesthousing5);
-            T20.SpacingAfter = 2;
+            T20.SpacingAfter = 3;
 
             Phrase ph8 = new Phrase(" ", new Font(Font.FontFamily.TIMES_ROMAN, 1f, Font.BOLD, BaseColor.BLACK));
 
@@ -642,24 +643,27 @@ namespace PDFDownloadPractice.Controllers
             T21.AddCell(cell53);
             T21.SpacingAfter = 1000;
 
-            Phrase ph12 = new Phrase("PACKAGING INSTRUCTIONS:", fontH6);
+            Phrase ph12 = new Phrase("PACKAGING INSTRUCTIONS:", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.BOLD | Font.UNDERLINE, BaseColor.BLACK));
+            //ph12.Append(new)
             PdfPCell cell77 = new PdfPCell(ph12);
             cell77.Border = Rectangle.NO_BORDER;
+            
             cell77.PaddingTop = 30;
             T23.AddCell(cell77);
 
             List list1 = new List(List.UNORDERED);
             list1.SetListSymbol("\u2022");
             list1.IndentationLeft = 30f;
+            list1.IndentationRight = 5;
             list1.Add(new ListItem(" Do not bind the product together. Place individual packs in cartons or neatly stack in boxes. Each carton should only contain product of the same quantity, price,category and tax jurisdiction.Do not mix the product in carton.Excise Tax Recovery Returns need only be separated by quantity, product deal and tax jurisdiction. ", fontH5));
-            list1.Add(new ListItem("Any product that appears to have been exposed to strong odors, foreign matter, infestation or excessive moisture should be isolated wrapped in plastic, and packagedseparately.", fontH5));
-            list1.Add(new ListItem("Shipping boxes should be in good condition. If re-using boxes, remove all old or existing labels or markings.", fontH5));
-            list1.Add(new ListItem("All boxes need to be labeled with the corresponding RGA number and sequentially number (1 of X, 2 of X)", fontH5));
-            list1.Add(new ListItem("Place the approved Returned Goods Authorization Form and any supporting documentation (ex. Authorized Concealed Damage Form) inside product shipment box 1 ofX and keep a copy for your files. ", fontH5));
-            list1.Add(new ListItem("Validate counts. In the event of a discrepancy, the Philip Morris USA Returned Goods Department's count will be final.", fontH5));
-            list1.Add(new ListItem("The completed form must be included with the shipment.", fontH5));
+            list1.Add(new ListItem(" Any product that appears to have been exposed to strong odors, foreign matter, infestation or excessive moisture should be isolated wrapped in plastic, and packaged separately.", fontH5));
+            list1.Add(new ListItem(" Shipping boxes should be in good condition. If re-using boxes, remove all old or existing labels or markings.", fontH5));
+            list1.Add(new ListItem(" All boxes need to be labeled with the corresponding RGA number and sequentially number (1 of X, 2 of X)", fontH5));
+            list1.Add(new ListItem(" Place the approved Returned Goods Authorization Form and any supporting documentation (ex. Authorized Concealed Damage Form) inside product shipment box 1 of X and keep a copy for your files. ", fontH5));
+            list1.Add(new ListItem(" Validate counts. In the event of a discrepancy, the Philip Morris USA Returned Goods Department's count will be final.", fontH5));
+            list1.Add(new ListItem(" The completed form must be included with the shipment.", fontH5));
 
-            Phrase ph13 = new Phrase("SHIPPING INSTRUCTIONS:", fontH6);
+            Phrase ph13 = new Phrase("SHIPPING INSTRUCTIONS:", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.BOLD | Font.UNDERLINE, BaseColor.BLACK));
             PdfPCell cell80 = new PdfPCell(ph13);
             cell80.Border = Rectangle.NO_BORDER;
             cell80.PaddingTop = 15;
@@ -689,24 +693,30 @@ namespace PDFDownloadPractice.Controllers
             PdfPTable tbfooter = new PdfPTable(3);
             tbfooter.TotalWidth = document.PageSize.Width - document.LeftMargin - document.RightMargin;
             tbfooter.DefaultCell.Border = 0;
-            tbfooter.AddCell(new Paragraph());
-            tbfooter.AddCell(new Paragraph());
-            var _cell2 = new PdfPCell(new Paragraph(new Chunk("Capitalized word and phases are defined in the Philip Morris USA Inc. Returned Goods Policy", new Font(Font.FontFamily.TIMES_ROMAN, 6f, Font.BOLD))));
-            _cell2.HorizontalAlignment = Element.ALIGN_RIGHT;
-            _cell2.PaddingTop = 10;
-            _cell2.Border = 0;
-            tbfooter.AddCell(_cell2);
-            tbfooter.AddCell(new Paragraph());
-            tbfooter.AddCell(new Paragraph());
-            var _celly = new PdfPCell(new Paragraph("Page" + writer.PageNumber.ToString() + "of " + (writer.PageNumber.ToString()), fontH5));//For page no.
+            var _celly = new PdfPCell(new Paragraph("Page " + writer.CurrentPageNumber.ToString() + " of " + (writer.CurrentPageNumber.ToString()), fontH5));//For page no.
             _celly.HorizontalAlignment = Element.ALIGN_CENTER;
-            _celly.VerticalAlignment = Element.ALIGN_TOP;
-           // _celly.PaddingTop = 10;
+            _celly.PaddingTop = 10;
+            _celly.PaddingLeft = 10;
             _celly.Border = 0;
             tbfooter.AddCell(_celly);
             tbfooter.AddCell(new Paragraph());
-            tbfooter.AddCell(new Paragraph());
-            float[] widths1 = new float[] { 20f, 20f, 200f };
+            var _cell2 = new PdfPCell(new Paragraph(new Chunk("Capitalized word and phases are defined in the Philip Morris USA Inc. Returned Goods Policy", new Font(Font.FontFamily.TIMES_ROMAN, 7f, Font.NORMAL))));
+            _cell2.HorizontalAlignment = Element.ALIGN_RIGHT;
+            _cell2.PaddingTop = 10;
+            _cell2.PaddingRight = 10;
+            _cell2.Border = 0;
+            tbfooter.AddCell(_cell2);
+            //tbfooter.AddCell(new Paragraph());
+            //tbfooter.AddCell(new Paragraph());
+            //var _celly = new PdfPCell(new Paragraph("Page" + writer.CurrentPageNumber.ToString() + " of " + (writer.CurrentPageNumber.ToString()), fontH5));//For page no.
+            //_celly.HorizontalAlignment = Element.ALIGN_CENTER;
+            //_celly.VerticalAlignment = Element.ALIGN_TOP;
+           // _celly.PaddingTop = 10;
+           // _celly.Border = 0;
+            //tbfooter.AddCell(_celly);
+            //tbfooter.AddCell(new Paragraph());
+            //tbfooter.AddCell(new Paragraph());
+            float[] widths1 = new float[] { 25f, 20f, 195f };
             tbfooter.SetWidths(widths1);
             tbfooter.WriteSelectedRows(0, -1, document.LeftMargin, writer.PageSize.GetBottom(document.BottomMargin), writer.DirectContent);
 
