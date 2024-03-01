@@ -8,7 +8,6 @@ using iText.Layout.Element;
 using iText.Kernel.Geom;
 using iText.Layout.Renderer;
 using System.Net.Http;
-using iTextSharp.text;
 using HtmlAgilityPack;
 
 namespace WebApplication1.Controllers
