@@ -1,14 +1,13 @@
 ﻿using iText.Html2pdf;
-using iText.Kernel.Pdf;
 using System;
 using System.IO;
-//using HtmlAgilityPack;
-using iText.Layout;
-using iText.Layout.Element;
-using iText.Kernel.Geom;
-using iText.Layout.Renderer;
-using System.Net.Http;
 using HtmlAgilityPack;
+//using iText.Kernel.Pdf;
+//using iText.Layout;
+//using iText.Layout.Element;
+//using iText.Kernel.Geom;
+//using iText.Layout.Renderer;
+//using System.Net.Http;
 
 namespace WebApplication1.Controllers
 {
