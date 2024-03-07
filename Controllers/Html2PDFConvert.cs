@@ -36,8 +36,8 @@ namespace WebApplication1.Controllers
 
                 if (inputElement1 != null && inputElement2 != null)
                 {
-                    string imgTag1 = $"<img style='border: 1px solid black;' src='data:image/Bmp;base64,{inputValue1}'>";
-                    string imgTag2 = $"<img style='border: 1px solid black;' src='data:image/Bmp;base64,{inputValue2}'>";
+                    string imgTag1 = $"<img class ='signature' src='data:image/Bmp;base64,{inputValue1}'>";
+                    string imgTag2 = $"<img class ='signature' src='data:image/Bmp;base64,{inputValue2}'>";
                     var parentDiv1 = inputElement1.ParentNode;
                     parentDiv1.InnerHtml = imgTag1;
                     var parentDiv2 = inputElement2.ParentNode;
