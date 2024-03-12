@@ -2,6 +2,23 @@
     size: A4;
     margin: 0.6cm;
 }
+input#txt-participating-stores-store-count {
+    border: none !important;
+}
+select#drop-down-email {
+    font-size: 12px;
+}
+/* input#chk-agdc-account-manager-check-agdc-account-manager-check {
+    width: 8.33333%;
+} */
+span.span-retailagreement-chkbox.small-11.columns {
+    margin-top: 12px;
+    /* width: min-content !important; */
+    float: none !important;
+}
+.pad-top-1 {
+    padding-top: 11px!important
+}
 
 .pad-left-2,
 .pad-sides-2 {
@@ -17,9 +34,9 @@
     display: none !important
 }
 
-#div-retail-leaders-program-plan-o-gram {
+/* #div-retail-leaders-program-plan-o-gram {
     margin-left: 270px !important;
-}
+} */
 
 input#txt-participating-stores-store-count {
     border: none;
@@ -35,7 +52,7 @@ input#txt-participating-stores-store-count {
     width: 112px;
     height: 17px;
     font-size: 10px;
-    border: 2.2px solid black;
+    border: 1.5px solid rgb(118, 118, 118);
     /* -moz-appearance: none; */
     appearance: none;
     background-repeat: no-repeat !important;
@@ -61,17 +78,56 @@ input#txt-participating-stores-store-count {
     top: -5px
 }
 
+.marg-left-5,.marg-sides-5 {
+    margin-left: 55px!important
+}
+.marg-left-3,.marg-sides-3 {
+    margin-left: 33px!important
+}
+.pad-left-5,.pad-sides-5 {
+    padding-left: 55px!important
+}
+.pad-bottom-1 {
+    padding-bottom: 11px!important
+}
 .termination-reason-check input[type=checkbox] {
     height: 20px !important;
     width: 20px !important
 }
-
-.termination-agreement-check-row label {
-    margin-left: 20px !important;
-    z-index: 0;
-    position: relative
+.marg-right-4,.marg-sides-4 {
+    margin-right: 44px!important
 }
-
+.termination-agreement-check-row label {
+    /* margin-left: 20px !important; */
+    /* z-index: 0; */
+    /* position: relative; */
+    margin-top: 4px;
+}
+.reason-for-termination {
+    margin-top: 4px;
+    /* padding-left: 9px; */
+    /* margin-left: 0px; */
+}
+/* option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+} */
+select#drop-down-pl {
+    appearance: none;
+    background-image: none;
+    font-size: 10px;
+    width: fit-content !important;
+    height: 20px !important;
+    background-color: white;
+    padding: 0px;
+    border-color:  rgb(118, 118, 118);
+    border-style: solid;
+    /* word-wrap: unset !important;
+    border: 1px solid black; */
+}
 .termination-agreement-check-row input[type=checkbox] {
     height: 20px !important;
     width: 20px !important;
@@ -155,9 +211,9 @@ input#txt-participating-stores-store-count {
     margin: 1.25rem 0 1.1875rem !important
 }
 
-.template-holder-main-container {
+/* .template-holder-main-container {
     height: 600px !important
-}
+} */
 
 #div-template-holder-main-container {
     padding-left: 5px !important;
@@ -252,7 +308,10 @@ input#txt-participating-stores-store-count {
 #div-template-holder-main-container input[type=text] {
     width: 80%;
     margin: 0 0 0.5rem 1px;
-    font-size: 10px !important
+    font-size: 10px !important;
+    border-width: 0.67px !important;
+    border-color: rgb(118, 118, 118);
+    border-style: solid;
 }
 
 #div-template-holder-main-container .span-label-radio,
@@ -1155,10 +1214,10 @@ input#txt-participating-stores-store-count {
     margin-left: 35px !important;
 }
 
-#div-template-holder-main-container .document-retailagreement-chkbox,
-#div-template-holder-main-container .document-scvalidation-chkbox {
-    margin-top: 10px !important;
-    margin-right: 8px !important
+#div-template-holder-main-container .document-retailagreement-chkbox, #div-template-holder-main-container .document-scvalidation-chkbox {
+    margin-top: 5px !important;
+    margin-right: 8px !important;
+    margin-bottom: 0px !important;
 }
 
 #div-template-holder-main-container #chk-wholesaler-agreement-wholesaler-agreement {
@@ -1166,7 +1225,8 @@ input#txt-participating-stores-store-count {
 }
 
 #div-template-holder-main-container .west-call-validation {
-    padding: 5px !important
+    padding: 5px !important;
+    /* float: none !important; */
 }
 
 #div-template-holder-main-container .check-box-label-field label {
@@ -1500,7 +1560,7 @@ input#txt-participating-stores-store-count {
 }
 
 #div-template-holder-main-container .sm-validation {
-    padding-top: 6px !important
+    padding-top: 8px !important;
 }
 
 #div-template-holder-main-container .horizontal-signature-label {
@@ -1701,8 +1761,13 @@ width: auto
     width: 91.66667%
 }
 
+/* .small-16 */
 .small-12 {
     width: 100%
+}
+
+.small-16{
+    width:100%
 }
 
 .medium-1 {
@@ -2005,7 +2070,7 @@ span.error {
     color: #fff
 }
 
-select {
+/* select {
     background-color: #f3f3f3;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
     background-position: 100% center;
@@ -2016,39 +2081,43 @@ select {
     color: #414042;
     padding: 0.5rem;
     border-radius: 0;
-}
+} */
 
 .k-block,
-.k-widget,
-select {
+.k-widget
+/* select  */
+{
     line-height: normal;
 }
 
 input[type=checkbox],
 input[type=file],
-label.inline,
-select {
+label.inline
+/* select  */
+{
     margin: 0 0 1rem;
 }
 
 /* input[type=radio] */
 .postfix,
-.prefix,
-select {
+.prefix
+/* select  */
+{
     font-size: .83rem;
-    height: 2.2675rem;
+    height: 36.28px;
 }
 
 .joyride-tip-guide,
 p,
-select {
+select
+{
     font-family: inherit;
 }
 
 /* .row, */
-select {
+/* select {
     width: 100%;
-}
+} */
 
 .column.small-centered,
 .columns.small-centered {

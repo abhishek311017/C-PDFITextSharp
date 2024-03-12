@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+</head>
+<body>
+    <div class="row collapse template-holder-main-container" id="div-template-holder-main-container">
+        <form data-abide="ajax" id="execute-contract" class="pl-feâ€”semiwide" novalidate="novalidate">
+            <button type="submit" id="shadow-submit" class="row collapse hide"></button>
+            <div class="small-12 columns execute-contract-container">
+                <div class="row collapse">
+                    <div class="small-12 columns " id="div-documents-mask">
+                    </div>
+                </div>
+                <div class="row collapse">
+                    <div class="small-12 columns documents-pending-mask  hide" id="div-documents-pending-mask">
+                        <div class="row collapse document-pending-text">
+                            <div class="small-12 columns">Pending </div>
+                        </div>
+                        <div class="row collapse document-pending-text-container">
+                            <div class="small-12 columns">
+                                This document is in Draft status
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row collapse mask-document-height">
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-textwidget">
+                            <div>
+                                <div class="small-16 columns">
+                                    <div class="row collapse text-center  text-widget-header">
+                                        <label class="small-16 columns">
+                                            <b>PHILIP MORRIS USA INC.</b>
+                                        </label>
+                                        <label class="small-16 columns">
+                                            <b>2015 Retail Leaders Program Agreement </b>
+                                        </label>
+                                        <label class="small-16 columns">
+                                            <b>Termination Notice </b>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-store-details">
+                            <div class="row collapse">
+                                <div class="small-12 columns widget-store-details">
+                                    <div class="row collapse">
+                                        <div class="large-3 medium-3 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-6 columns">
+                                                    <label for="txt-store-details-hqma-account-number">HQ M.A.#:
+                                                    </label>
+                                                </div>
+                                                <div class="small-6 columns">
+                                                    <input type="text" id="txt-store-details-hqma-account-number"
+                                                        readonly="" value="10910" data-section-code="4J992_Section3">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="large-3 medium-3 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-5 columns">
+                                                    <label for="txt-store-details-territory">Territory #:</label>
+                                                </div>
+                                                <div class="small-7 columns">
+                                                    <input type="text" id="txt-store-details-territory" readonly=""
+                                                        value="360502" data-section-code="4J992_Section3">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="large-6 medium-6 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-4 columns">
+                                                    <label for="txt-store-details-retailer-name">Retailer Name: </label>
+                                                </div>
+                                                <div class="small-8 columns">
+                                                    <input type="text" id="txt-store-details-retailer-name" readonly=""
+                                                        value="WEIGEL'S FARM STORES "
+                                                        data-section-code="4J992_Section3">
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-3 medium-3 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-6 columns">
+                                                    <label for="txt-store-details-retail-account-aumber">Retail Control
+                                                        #: </label>
+                                                </div>
+                                                <div class="small-6 columns">
+                                                    <input type="text" id="txt-store-details-retail-account-aumber"
+                                                        readonly="" value="" data-section-code="4J992_Section3">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="large-6 medium-6 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-4 columns">
+                                                    <label for="txt-store-details-address-line1">Street Address-Line 1:
+                                                    </label>
+                                                </div>
+                                                <div class="small-8 columns">
+                                                    <input type="text" id="txt-store-details-address-line1" readonly=""
+                                                        value="3100 WEIGEL LN" data-section-code="4J992_Section3"
+                                                        maxlength="35">
+
+
+
+
+
+                                                    <small class="error">Please enter Address Line - 1 </small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-3 medium-3 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-6 columns">
+                                                    <label for="txt-store-details-management-account-number">Mgmt.
+                                                        Acct.#: </label>
+                                                </div>
+                                                <div class="small-6 columns">
+                                                    <input type="text" id="txt-store-details-management-account-number"
+                                                        readonly="" value="10910" data-section-code="4J992_Section3">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="large-3 medium-3 small-12 columns label-radio-storefield">
+
+                                            <div class="row collapse">
+                                                <div class="small-6 columns ">
+                                                    <label for="rbtn-store-details-ownership-type-indep">Indep: </label>
+                                                </div>
+                                                <div class="small-6 columns end label-radio-field-radio ">
+                                                    <input name="store-details-ownership-type" type="radio"
+                                                        id="rbtn-store-details-ownership-type-indep" readonly=""
+                                                        disabled="">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row collapse">
+                                                <div class="small-6 columns ">
+                                                    <label for="rbtn-store-details-ownership-type-chain">Chain:</label>
+                                                </div>
+                                                <div class="small-6 columns end label-radio-field-radio ">
+                                                    <input name="store-details-ownership-type" type="radio"
+                                                        id="rbtn-store-details-ownership-type-chain" readonly=""
+                                                        disabled="" checked="&quot;checked&quot;">
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="large-6 medium-6 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-4 columns">
+                                                    <label for="txt-store-details-address-line2">Street Address-Line 2:
+                                                    </label>
+                                                </div>
+                                                <div class="small-8 columns">
+                                                    <input type="text" id="txt-store-details-address-line2" readonly=""
+                                                        value="" data-section-code="4J992_Section3" maxlength="35">
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-6 medium-6 small-6 columns blank-space">
+                                        </div>
+
+
+
+                                        <div class="large-2 medium-2 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-3 columns">
+                                                    <label for="txt-store-details-city">City: </label>
+                                                </div>
+                                                <div class="small-9 columns">
+                                                    <input type="text" id="txt-store-details-city" readonly=""
+                                                        value="POWELL" maxlength="35"
+                                                        data-section-code="4J992_Section3">
+                                                    <small class="error">Please Enter City.</small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="large-2 medium-2 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-4 columns">
+                                                    <label for="txt-store-details-state">State: </label>
+                                                </div>
+                                                <div class="small-8 columns" id="div-state-field">
+                                                    <input type="text" id="txt-store-details-state" readonly=""
+                                                        value="TN" maxlength="2" pattern="only_two_letters"
+                                                        data-section-code="4J992_Section3">
+                                                    <small class="error">Please Enter State in proper format.</small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="large-2 medium-2 small-12 columns label-text-field">
+                                            <div class="row collapse">
+                                                <div class="small-3 columns">
+                                                    <label for="txt-store-details-zip">Zip: </label>
+                                                </div>
+                                                <div class="small-9 columns">
+                                                    <input type="text" id="txt-store-details-zip" readonly=""
+                                                        pattern="zip_code_pattern" value="37849-4201"
+                                                        data-section-code="4J992_Section3" maxlength="10">
+                                                    <small class="error">Please enter Zip Code in proper format.</small>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-6 medium-6 small-6 columns blank-space">
+                                        </div>
+
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="hdn-calendar-selected-date" value="03/11/2024">
+                            <input type="hidden" id="hdn-agreement-effective-date" value="03/11/2024 14:54:30">
+                            <input type="hidden" id="hdn-termination-date" value="12/31/9999">
+                            <input type="hidden" id="hdnUserAccountType" value="C">
+
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-plan-level-selection">
+                            <div class="row collapse widget-plan-level-selection">
+                                <div class="small-10 columns label-text-field marg-left-1">
+                                    <label><u>Altria Group Distribution Company (“AGDC”) on behalf of Philip Morris USA
+                                            Inc. (“PM USA”):</u></label>
+                                </div>
+                                <div class="row collapse">
+                                    <div class="large-7 medium-7 small-12 columns marg-left-1 pad-top-1 plan-level-dp">
+
+                                        <div class="small-3 columns pad-top-1">
+                                            <label class="plan-level-dp">Plan and Level</label>
+                                        </div>
+                                        <div class="small-9 columns  left">
+                                            <select id="drop-down-pl" fixture="" choice="" with="" progressive=""
+                                                merchandising="" (f1)="">
+                                                <option value="Select" fixture="" choice="" with="" progressive=""
+                                                    merchandising="" (f1)="" id="tp-Select">Select</option>
+                                                <option value="Fixture Choice with Progressive Merchandising (F1)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    selected=""
+                                                    id="tp-Fixture Choice with Progressive Merchandising (F1)">Fixture Choice with Progressive Merchandising (F1)</option>
+                                                <option value="Fixture Choice without Progressive Merchandising (F-1)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Fixture Choice without Progressive Merchandising (F-1)">
+                                                    Fixture Choice without Progressive Merchandising (F-1)</option>
+                                                <option value="Fixture Premium with Progressive Merchandising (F5)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Fixture Premium with Progressive Merchandising (F5)">Fixture
+                                                    Premium with Progressive Merchandising (F5)</option>
+                                                <option value="Fixture Premium without Progressive Merchandising (F-5)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Fixture Premium without Progressive Merchandising (F-5)">
+                                                    Fixture Premium without Progressive Merchandising (F-5)</option>
+                                                <option value="Display Choice with Progressive Merchandising (P1)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Display Choice with Progressive Merchandising (P1)">Display
+                                                    Choice with Progressive Merchandising (P1)</option>
+                                                <option value="Display Choice without Progressive Merchandising (P-1)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Display Choice without Progressive Merchandising (P-1)">
+                                                    Display Choice without Progressive Merchandising (P-1)</option>
+                                                <option value="Display Premium with Progressive Merchandising (P5)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Display Premium with Progressive Merchandising (P5)">Display
+                                                    Premium with Progressive Merchandising (P5)</option>
+                                                <option value="Display Premium without Progressive Merchandising (P-5)"
+                                                    fixture="" choice="" with="" progressive="" merchandising="" (f1)=""
+                                                    id="tp-Display Premium without Progressive Merchandising (P-5)">
+                                                    Display Premium without Progressive Merchandising (P-5)</option>
+
+                                            </select>
+                                            <small class="error">Please select a value from dropdown.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-termination-agreement">
+                            <div class="row collapse termination-agreement-row">
+                                <div class="columns small-12 marg-left-3 pad-bottom-1">
+                                    <label>Dear Retailer: <br>This document serves as a notice of termination of your PM
+                                        USA Retail Leaders Program Agreement (the “Agreement”),<br></label>
+                                </div>
+                            </div>
+                            <div class="radio-group small-6 large-6 medium-6 columns marg-left-5 termination-agreement-error"
+                                data-abide-validator-min="1" id="dv-termination-agreement">
+                                <div class="row collapse pad-bottom-1 termination-agreement-check-row pad-left-5">
+
+                                    <div class="small-1 large-1 medium-1 pad-left-4 columns label-radio-field-radio">
+
+                                        <input type="radio" id="rbtn-termination-agreement-entirety"
+                                            name="termination-agreement-group" class="termination-agreement-check"
+                                            checked="&quot;checked&quot;" data-abide-validator="">
+                                    </div>
+                                    <div class="small-11 large-11 medium-11 columns">
+                                        <label>In its entirety</label>
+                                    </div>
+                                </div>
+
+                                <div class="row collapse termination-agreement-check-row check-row pad-left-5">
+
+                                    <div class="small-1 large-1 medium-1 pad-left-4 columns label-radio-field-radio">
+
+                                        <input type="radio" id="rbtn-termination-agreement-store-list-attached"
+                                            name="termination-agreement-group" class="termination-agreement-check"
+                                            data-abide-validator="">
+                                    </div>
+                                    <div class="small-11 large-11 medium-11 columns">
+                                        <label>With respect to the stores on the list attached hereto</label>
+                                    </div>
+                                </div>
+                                <small class="error">Must select one option</small>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="radio-group small-7 large-7 medium-7 columns termination-error marg-left-5"
+                                data-abide-validator-min="1" id="dv-termination">
+
+                                <div class="row collapse pad-bottom-1 termination-agreement-check-row">
+                                    <div class="small-1 large-1 medium-1 columns label-radio-field-radio">
+
+                                        <input type="radio" id="rbtn-termination-agreement-agdc-initiating"
+                                            name="termination-agreement-group-group" class="termination-agreement-check"
+                                            checked="&quot;checked&quot;" data-abide-validator="">
+                                    </div>
+                                    <div class="small-11 large-11 medium-11 columns">
+                                        <label>You have informed AGDC that you wish to terminate the Agreement.</label>
+                                    </div>
+                                </div>
+
+                                <div class="row collapse termination-agreement-check-row check-row">
+                                    <div class="small-1 large-1 medium-1 columns label-radio-field-radio">
+
+                                        <input type="radio" id="rbtn-termination-agreement-retailer-initiating"
+                                            name="termination-agreement-group-group" class="termination-agreement-check"
+                                            data-abide-validator="">
+                                    </div>
+                                    <div class="small-11 large-11 medium-11 columns">
+                                        <label>AGDC, on behalf of PM USA, is electing to terminate the
+                                            Agreement.</label>
+                                    </div>
+                                </div>
+                                <small class="error">Must select one option</small>
+                            </div>
+                            <div class="row collapse termination-agreement-row ">
+                                <div class="columns small-12 marg-left-3 pad-top-1">
+                                    <label class="marg-right-4">Pursuant to the terms of the Agreement, the Agreement
+                                        will terminate 30 days after the Notice Date below. If you have any questions
+                                        about this notice, please contact your AGDC representative.</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-termination-reason">
+                            <div class="row collapse">
+                                <div class="columns small-12 marg-left-3 marg-top-1 termination-reason-title">
+                                    <label>Reason for Termination:<br></label>
+                                </div>
+                                <div class="small-12 columns widget-store-details checkbox-group"
+                                    data-abide-validator-min="1" id="dv-termination-reason">
+                                    <div class="row collapse">
+                                        <div class="small-12 columns">
+                                            <div class="row collapse">
+                                                <div class="small-12 columns">
+                                                    <label></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-5 medium-5 small-5 columns pad-bottom-1 marg-left-5">
+                                            <div class="row collapse">
+
+                                                <div
+                                                    class="small-1 large-1 columns termination-reason-check label-radio-field-radio">
+                                                    <input type="radio"
+                                                        id="rbtn-termination-reason-store-no-longer-open-buisness"
+                                                        checked="&quot;checked&quot;" data-section-code="4J992_Section6"
+                                                        name="termination-reason-group"
+                                                        data-abide-validator="checkbox_minimum_checked">
+                                                </div>
+                                                <div class="small-11 large-11 columns reason-for-termination">
+                                                    <label
+                                                        for="rbtn-termination-reason-store-no-longer-open-buisness">Store(s)
+                                                        no longer open for business</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="large-5 medium-5 small-5 columns pad-bottom-1 marg-left-5">
+                                            <div class="row collapse">
+                                                <div
+                                                    class="small-1 large-1 columns termination-reason-check label-radio-field-radio">
+                                                    <input type="radio"
+                                                        id="rbtn-termination-reason-repeated-non-performance"
+                                                        data-section-code="4J992_Section6"
+                                                        name="termination-reason-group"
+                                                        data-abide-validator="checkbox_minimum_checked">
+                                                </div>
+                                                <div class="small-11 large-11 columns reason-for-termination">
+                                                    <label
+                                                        for="rbtn-termination-reason-repeated-non-performance">Store(s)'
+                                                        non-performance</label>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="large-5 medium-5 small-5 columns pad-bottom-1 marg-left-5">
+                                            <div class="row collapse">
+
+                                                <div
+                                                    class="small-1 large-1 columns termination-reason-check label-radio-field-radio">
+                                                    <input type="radio" id="rbtn-termination-reason-no-longer-selling"
+                                                        data-section-code="4J992_Section6"
+                                                        name="termination-reason-group"
+                                                        data-abide-validator="checkbox_minimum_checked">
+                                                </div>
+                                                <div class="small-11 large-11 columns reason-for-termination">
+                                                    <label for="rbtn-termination-reason-no-longer-selling">Store(s) no
+                                                        longer selling PM USA products</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="large-5 medium-5 small-5 columns pad-bottom-1 marg-left-5">
+                                            <div class="row collapse">
+
+                                                <div
+                                                    class="small-1 large-1 columns termination-reason-check label-radio-field-radio">
+                                                    <input type="radio" id="rbtn-termination-reason-other"
+                                                        data-section-code="4J992_Section6"
+                                                        name="termination-reason-group"
+                                                        data-abide-validator="checkbox_minimum_checked">
+                                                </div>
+                                                <div class="small-11 large-11 columns reason-for-termination">
+                                                    <label for="rbtn-termination-reason-other">Other</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <small class="error">Must select a reason.</small>
+                                </div>
+                            </div>
+                            <input type="hidden" id="hdn-calendar-selected-date" value="">
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-textwidget">
+                            <div>
+                                <div class="small-16 columns">
+                                    <div class="row collapse text-widget-header">
+                                        <label class="small-16 columns">
+                                            <br><b>Electronically Executed Document</b><br><br> </label>
+                                    </div>
+                                    <div class="row collapse textWidgetGeneralText">
+                                        <label class="small-16 columns">
+                                            This is an electronically executed Termination Notice, which means that the
+                                            electronically executed document is the original and legally binding
+                                            agreement between PM USA and Retailer. Any paper version, even if signed,
+                                            should be regarded only as a courtesy copy. In the event of a conflict
+                                            between the electronically executed document and any paper version, the
+                                            electronically executed document will control.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns" id="div-textwidget">
+                            <div>
+                                <div class="small-16 columns">
+                                    <div class="row collapse text-widget-general-text">
+                                        <br><label>By signing below, Retailer verifies that all of the information
+                                            entered in the fields above is accurate.</label><br><br>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-6 columns" id="div-retail-signature">
+
+
+                            <div class="row collapse retail-signature-container widget-agdc-retailer-signature">
+                                <div class="small-12 columns">
+                                    <div class="row collapse agdc-rep-container-heading">
+                                    </div>
+                                    <div class="row collapse agdc-rep-container-heading">
+                                        <label><b>Retailer (Must be signed by an authorized representative)</b></label>
+                                    </div>
+                                    <div class="row collapse ">
+                                        <div class="small-7 columns">
+                                            <div class="row collapse">
+                                                <div id="signature-pad" class="pl-esignature " pl-init="">
+                                                    <canvas class="pl-esignature__canvas signature disabled"
+                                                        id="retailer-sig-canvas" width="335" height="132"></canvas>
+                                                    <div>
+                                                        <a class="pl-esignature__save  disable-signature-button button disabled"
+                                                            id="btn-retail-signature-accept" data-action="save">
+                                                            Accept
+                                                        </a>
+                                                        <a class="pl-esignature__clear signature-button"
+                                                            id="btn-retail-signature-clear" data-action="clear">
+                                                            Clear
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" id="retailer-sig-imgsrc"
+                                                    value="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">
+                                            </div>
+                                        </div>
+                                        <div class="small-3 columns signature-date">
+                                            <input type="text" id="txt-retail-signature-date" readonly=""
+                                                class="retailer-repsig-date-text" value="03/11/24"
+                                                pattern="date_year_2_format">
+                                        </div>
+                                        <div class="small-2 columns signature-date">
+                                            <label class="retailer-sig-Date-label datelabel">Date:</label>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row collapse retailer-signature-button-container">
+                                        <section class="small-12 columns end retailer-sig-signature-buttons">
+                                            <section class="small-6 columns signature-button-container"
+                                                id="section-signature-accept"></section>
+                                            <section class="small-6 columns signature-button-container end"></section>
+                                        </section>
+                                    </div>
+
+                                    <div class="row collapse">
+                                        <div class="small-4 columns">
+                                            <label class="signature-label">Printed Name :</label>
+                                        </div>
+                                        <div class="small-6 columns end">
+                                            <input type="text" id="txt-retail-signature-printed-name" value="Abhishek"
+                                                maxlength="35" required="">
+                                            <small class="error">Retailer Printed Name must be entered.</small>
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="small-4 columns">
+                                            <label class="signature-label">Title :</label>
+                                        </div>
+                                        <div class="small-6 columns end">
+                                            <input type="text" id="txt-retail-signature-title" value="YOO"
+                                                maxlength="35" required="">
+                                            <small class="error">Retailer Rep Title must be entered.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="hidden" id="hdn-retail-signature-control-editibility" value="">
+
+                        </div>
+                        <div class="small-6 columns" id="div-agdc-representative-sig">
+
+                            <div class="row collapse retail-signature-container widget-agdc-retailer-signature">
+                                <div class="small-12 columns">
+                                    <div class="row collapse agdc-rep-container-heading">
+                                        <label><b>Philip Morris USA Inc.</b></label>
+                                    </div>
+                                    <div class="row collapse agdc-rep-container-heading">
+                                        <label><b>By: Altria Group Distribution Company.</b></label>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="small-7 columns">
+                                            <div class="row collapse">
+                                                <div id="signature-pad1" class="pl-esignature" pl-init="">
+                                                    <canvas class="pl-esignature__canvas signature disabled"
+                                                        id="retailer-sig1-canvas" width="335" height="132"></canvas>
+                                                    <div>
+                                                        <a class="pl-esignature__save button disabled disable-signature-button"
+                                                            id="btn-agdc-representative-sig-accept" data-action="save">
+                                                            Accept
+                                                        </a>
+                                                        <a class="pl-esignature__clear"
+                                                            id="btn-agdc-representative-sig-clear" data-action="clear">
+                                                            Clear
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <input type="hidden" id="retailer-sig1-imgsrc"
+                                                    value="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">
+                                            </div>
+                                        </div>
+                                        <div class="small-3 columns signature-date">
+                                            <input type="text" id="txt-agdc-representative-sig-date"
+                                                class="agdc-repsig-date-text" readonly="" value="03/11/24" required=""
+                                                pattern="date_year_2_format">
+                                        </div>
+                                        <div class="small-2 columns signature-date">
+                                            <label class="agdc-repsig-date-label datelabel">Date:</label>
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <section class="small-12 columns end agdc-repsig-signature-buttons">
+                                            <section class="small-6 columns signature-button-container"
+                                                id="section-signature-accept">
+                                            </section>
+                                            <section class="small-6 columns signature-button-container end">
+                                            </section>
+                                        </section>
+                                    </div>
+
+                                    <div class="row collapse">
+                                        <div class="small-12 columns ">
+                                            <label class="agdc-repsig-agdc-mng-label">
+                                                AGDC Representative
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row collapse">
+                                        <div class="small-4 columns">
+                                            <label class="signature-label">Printed Name :</label>
+                                        </div>
+                                        <div class="small-6 columns end">
+                                            <input type="text" id="txt-agdc-representative-sig-printed-name"
+                                                value="Sunil Ananthula" maxlength="35" required="">
+                                            <small class="error">AGDC Rep Printed Name must be entered.</small>
+                                        </div>
+                                    </div>
+                                    <div class="row collapse">
+                                        <div class="small-4 columns">
+                                            <label class="signature-label">Title :</label>
+                                        </div>
+                                        <div class="small-6 columns end">
+                                            <input type="text" id="txt-agdc-representative-sig-title" value="NOT FOUND"
+                                                maxlength="35" required="">
+                                            <small class="error">Rep Title must be entered.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="hdn-agdc-representative-sig-control-editibility" value="">
+                            <input type="hidden" id="hdn-agdc-representative-sig-control-show" value="value">
+
+                        </div>
+                    </div>
+                    <div class="row collapse template-section">
+                        <div class="small-12 columns">
+                            <div class="row collapse">
+                                <div class="small-8 medium-8  columns">
+                                    <label id="lbl-document-footer-version">Version 1.0</label>
+                                </div>
+                                <div class="small-2 medium-2 columns">
+                                    <label id="lbl-document-footer-versionDate">05/09/2019</label>
+                                </div>
+                                <div class="small-2 medium-2 columns">
+                                    <label id="lbl-document-footer-PosNumber">POS# M2982</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <input type="hidden" id="hdn-template-widget-script-objects"
+                        value="4J992_Section3$store-details$insights_store_details_widget|4J992_Section4$plan-level-selection$insights_plan_level_selection_widget|4J992_Section5$termination-agreement$insights_termination_agreement_widget|4J992_Section6$termination-reason$insights_termination_reason_widget|4J992_Section25$retail-signature$insights_retail_signature_widget|4J992_Section26$agdc-representative-sig$insights_agdc_representative_sig_widget|">
+                    <input type="hidden" id="hdn-template-script-object" value="insights_contract_4J992">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
