@@ -2,12 +2,32 @@
     size: A4;
     margin: 0.6cm;
 }
+.span-label-chkbox br {
+    display: none;
+}
+/* input#txt-retail-signature-printed-name,#txt-retail-signature-title,#txt-agdc-representative-sig-title,#txt-agdc-representative-sig-printed-name {
+    margin-top: 7px !important;
+} */
+input#txt-pog-details-today-date {
+    width: 100% !important;
+}
+input#txt-pog-details-pog-details-retailer-name {
+    width: 100% !important;
+}
+input#txt-pog-details-pog-details-title {
+    width: 100% !important;
+}
+input#txt-pog-details-chain-hq-name {
+    width: 100% !important;
+}
 input#txt-participating-stores-store-count {
     border: none !important;
 }
+
 select#drop-down-email {
     font-size: 12px;
 }
+
 /* input#chk-agdc-account-manager-check-agdc-account-manager-check {
     width: 8.33333%;
 } */
@@ -16,8 +36,9 @@ span.span-retailagreement-chkbox.small-11.columns {
     /* width: min-content !important; */
     float: none !important;
 }
+
 .pad-top-1 {
-    padding-top: 11px!important
+    padding-top: 11px !important
 }
 
 .pad-left-2,
@@ -78,36 +99,48 @@ input#txt-participating-stores-store-count {
     top: -5px
 }
 
-.marg-left-5,.marg-sides-5 {
-    margin-left: 55px!important
+.marg-left-5,
+.marg-sides-5 {
+    margin-left: 55px !important
 }
-.marg-left-3,.marg-sides-3 {
-    margin-left: 33px!important
+
+.marg-left-3,
+.marg-sides-3 {
+    margin-left: 33px !important
 }
-.pad-left-5,.pad-sides-5 {
-    padding-left: 55px!important
+
+.pad-left-5,
+.pad-sides-5 {
+    padding-left: 55px !important
 }
+
 .pad-bottom-1 {
-    padding-bottom: 11px!important
+    padding-bottom: 11px !important
 }
+
 .termination-reason-check input[type=checkbox] {
     height: 20px !important;
     width: 20px !important
 }
-.marg-right-4,.marg-sides-4 {
-    margin-right: 44px!important
+
+.marg-right-4,
+.marg-sides-4 {
+    margin-right: 44px !important
 }
+
 .termination-agreement-check-row label {
     /* margin-left: 20px !important; */
     /* z-index: 0; */
     /* position: relative; */
     margin-top: 4px;
 }
+
 .reason-for-termination {
     margin-top: 4px;
     /* padding-left: 9px; */
     /* margin-left: 0px; */
 }
+
 /* option {
     font-weight: normal;
     display: block;
@@ -123,11 +156,12 @@ select#drop-down-pl {
     height: 20px !important;
     background-color: white;
     padding: 0px;
-    border-color:  rgb(118, 118, 118);
+    border-color: rgb(118, 118, 118);
     border-style: solid;
     /* word-wrap: unset !important;
     border: 1px solid black; */
 }
+
 .termination-agreement-check-row input[type=checkbox] {
     height: 20px !important;
     width: 20px !important;
@@ -567,16 +601,27 @@ select#drop-down-pl {
 }
 
 #div-template-holder-main-container .label-radio-storefield {
-    /* top: 37px; */
-    position: relative;
+    position: absolute !important;
     border: 1px solid #000;
+    top: 30px;
     /* padding-left: 10px !important; */
     /* margin-right: 10px !important; */
-    /* margin-left: 10px; */
-    margin-top: -32px;
-    /* width: 160px; */
+    margin-left: 172px;
+    /* margin-top: -6px !important; */
+    width: 154px;
     /* width: 200px; */
 }
+/* #div-template-holder-main-container .label-radio-storefield {
+    /* top: 37px; 
+    position: relative;
+    border: 1px solid #000;
+    /* padding-left: 10px !important; 
+    /* margin-right: 10px !important; 
+    /* margin-left: 10px; 
+    margin-top: -32px;
+    /* width: 160px; 
+    /* width: 200px; 
+} */
 
 #div-template-holder-main-container .label-radio-storefield>div:nth-child(1) {
     margin-top: 10px;
@@ -775,12 +820,13 @@ select#drop-down-pl {
 
 #div-template-holder-main-container .agdc-repsig-date-text,
 #div-template-holder-main-container .retailer-repsig-date-text {
-    margin-top: 28px !important;
+    margin-top: 32px !important;
     padding-right: 1px !important
 }
 
 #div-template-holder-main-container .signature-label {
-    line-height: 2.3125rem !important
+    line-height: 2.3125rem !important;
+    margin-top: -7px !important;
 }
 
 #div-template-holder-main-container .agdc-rep-container-heading {
@@ -1206,15 +1252,19 @@ select#drop-down-pl {
 #div-template-holder-main-container .document-retailagreement-chkbox,
 #div-template-holder-main-container .document-retailsection-chkbox,
 #div-template-holder-main-container .document-scvalidation-chkbox {
-    float: left !important
+    float: left !important;
+    /* margin-right: 24px !important; */
 }
 
 #div-template-holder-main-container .lbl-label-chkbox,
+#div-template-holder-main-container .span-label-chkbox>b,
 #div-template-holder-main-container .span-label-chkbox {
     margin-left: 35px !important;
+    /* border: 10px solid black; */
 }
 
-#div-template-holder-main-container .document-retailagreement-chkbox, #div-template-holder-main-container .document-scvalidation-chkbox {
+#div-template-holder-main-container .document-retailagreement-chkbox,
+#div-template-holder-main-container .document-scvalidation-chkbox {
     margin-top: 5px !important;
     margin-right: 8px !important;
     margin-bottom: 0px !important;
@@ -1449,12 +1499,12 @@ select#drop-down-pl {
 }
 
 #div-template-holder-main-container .div-pog-details-widget {
-    font-size: 14px !important;
-    margin-top: 5%
+    /* font-size: 14px !important; */
+    margin-top: 25px;
 }
 
 #div-template-holder-main-container .lbl-pog-details-text {
-    line-height: 2.4 !important
+    line-height: 1.4 !important;
 }
 
 #div-template-holder-main-container .pog-details-pog-number {
@@ -1467,8 +1517,8 @@ select#drop-down-pl {
 }
 
 #div-template-holder-main-container #div-chk-document-attached {
-    padding-top: 3%;
-    margin-left: 3%
+    padding-top: 10px;
+    margin-left: 20px;
 }
 
 #div-template-holder-main-container .lbl-header-text-color-span {
@@ -1766,8 +1816,8 @@ width: auto
     width: 100%
 }
 
-.small-16{
-    width:100%
+.small-16 {
+    width: 100%
 }
 
 .medium-1 {
@@ -2085,32 +2135,34 @@ span.error {
 
 .k-block,
 .k-widget
+
 /* select  */
-{
+    {
     line-height: normal;
 }
 
 input[type=checkbox],
 input[type=file],
 label.inline
+
 /* select  */
-{
+    {
     margin: 0 0 1rem;
 }
 
 /* input[type=radio] */
 .postfix,
 .prefix
+
 /* select  */
-{
+    {
     font-size: .83rem;
     height: 36.28px;
 }
 
 .joyride-tip-guide,
 p,
-select
-{
+select {
     font-family: inherit;
 }
 
