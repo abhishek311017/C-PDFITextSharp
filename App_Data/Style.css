@@ -2,26 +2,24 @@
     size: A4;
     margin: 0.6cm;
 }
+
+#div-textwidget>br,
+#div-textwidget>div>br,
 .span-label-chkbox br {
     display: none;
+}
+label#lbl-modify-pog, #lbl-sharespace-pog {
+    margin-top: 4px !important;
 }
 /* input#txt-retail-signature-printed-name,#txt-retail-signature-title,#txt-agdc-representative-sig-title,#txt-agdc-representative-sig-printed-name {
     margin-top: 7px !important;
 } */
-input#txt-pog-details-today-date {
-    width: 100% !important;
-}
-input#txt-pog-details-pog-details-retailer-name {
-    width: 100% !important;
-}
-input#txt-pog-details-pog-details-title {
-    width: 100% !important;
-}
-input#txt-pog-details-chain-hq-name {
-    width: 100% !important;
-}
+input#txt-pog-details-today-date,
+input#txt-pog-details-pog-details-retailer-name,
+input#txt-pog-details-pog-details-title,
+input#txt-pog-details-chain-hq-name,
 input#txt-participating-stores-store-count {
-    border: none !important;
+    width: 100% !important;
 }
 
 select#drop-down-email {
@@ -60,7 +58,7 @@ span.span-retailagreement-chkbox.small-11.columns {
 } */
 
 input#txt-participating-stores-store-count {
-    border: none;
+    border: none !important;
     text-align: left;
     margin-left: 0px !important;
 }
@@ -611,6 +609,7 @@ select#drop-down-pl {
     width: 154px;
     /* width: 200px; */
 }
+
 /* #div-template-holder-main-container .label-radio-storefield {
     /* top: 37px; 
     position: relative;
@@ -1608,11 +1607,19 @@ select#drop-down-pl {
 #div-template-holder-main-container .error-modify-pog {
     margin-left: 11px
 }
-
+#div-template-holder-main-container .span-scvalidation-chkbox,
 #div-template-holder-main-container .sm-validation {
-    padding-top: 8px !important;
+    /* padding-top: 9px !important; */
+    /* border: 1px solid; */
+    float: none !important;
+    top: 4px;
+    /* display:inline-block!important;
+    position: absolute !important;
+    left: 26px; */
 }
-
+#div-template-holder-main-container .span-scvalidation-chkbox.sm-validation{
+    left:27px !important
+}
 #div-template-holder-main-container .horizontal-signature-label {
     font-weight: 700
 }
@@ -2171,9 +2178,9 @@ select {
     width: 100%;
 } */
 
-.column.small-centered,
+/* .column.small-centered, */
 .columns.small-centered {
-    margin-left: auto;
-    margin-right: auto;
-    float: none
+    margin-left: 110px;
+    /* margin-right: auto; */
+    float: none;
 }
